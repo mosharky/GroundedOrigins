@@ -1,0 +1,33 @@
+{
+    "type": "origins:multiple",
+    "elytra": {
+        "type": "origins:elytra_flight",
+        "render_elytra": true,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:in_rain"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">",
+                    "compare_to": 0.0
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "chest",
+                    "item_condition": {
+                        "type": "origins:armor_value",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    }
+                }
+            ]
+        }
+    }
+}

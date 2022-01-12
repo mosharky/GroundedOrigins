@@ -1,0 +1,70 @@
+{
+    "type": "origins:multiple",
+    "crab_walk": {
+        "type": "origins:ignore_water",
+        "condition": {
+            "inverted": true,
+            "type": "origins:resource",
+            "resource": "*:*_timer",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "slow_falling": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 2,
+        "duration_per_stack": 10,
+        "effect": {
+            "effect": "minecraft:slow_falling",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0.0
+        }
+    },
+    "timer": {
+        "type": "origins:cooldown",
+        "cooldown": 50,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "activate": {
+        "type": "origins:active_self",
+        "cooldown": 200,
+        "entity_action": {
+            "type": "origins:trigger_cooldown",
+            "power": "*:*_timer"
+        },
+        "hud_render": {
+            "sprite_location": "grounded_origins:textures/gui/custom_bars.png",
+            "bar_index": 3
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_timer",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">",
+                    "compare_to": 0.0
+                }
+            ]
+        }
+    }
+}

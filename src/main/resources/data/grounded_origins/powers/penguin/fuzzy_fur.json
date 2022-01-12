@@ -1,0 +1,61 @@
+{
+    "type": "origins:multiple",
+    "nether_burn": {
+        "type": "origins:burn",
+        "interval": 100,
+        "burn_duration": 10,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:dimension",
+                    "dimension": "minecraft:the_nether"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:fire_protection",
+                    "calculation": "sum",
+                    "comparison": ">=",
+                    "compare_to": 8
+                }
+            ]
+        }
+    },
+    "flammable": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "value": 1.5,
+            "operation": "multiply_total"
+        },
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "lava"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "onFire"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "inFire"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "hotFloor"
+                }
+            ]
+        },
+        "condition": {
+            "inverted": true,
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:fire_protection",
+            "calculation": "sum",
+            "comparison": ">=",
+            "compare_to": 4
+        }
+    }
+}
