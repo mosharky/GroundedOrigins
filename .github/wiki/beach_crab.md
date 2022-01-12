@@ -3,12 +3,12 @@
 ***
 
 # **Description/Overview**
-Crustaceans who like to rave, preferably on beaches.
+_Crustaceans who like to rave, preferably on beaches._
 
 ***
 
 # **Home!**
-**Description**: _"Beach biomes provide you with immense strength and fortification. You feel weaker outside of beach biomes if you stay in them for too long."_
+_"Beach biomes provide you with immense strength and fortification. You feel weaker outside of beach biomes if you stay in them for too long."_
 
 **Ability 1**:
 - Stacks Resistance II & Strength II effects for up to 2:30 mins
@@ -25,7 +25,7 @@ Crustaceans who like to rave, preferably on beaches.
 
 
 # **Rave!**
-**Description**: _"Play the song of your people, and rave for your valor!"_
+_"Play the song of your people, and rave for your valor!"_
 
 **Ability 1**:
 - Summons lingering Resistance IV effect above the block you stood on
@@ -45,7 +45,7 @@ Crustaceans who like to rave, preferably on beaches.
 
 
 # **Krusty**
-**Description**: _"You are a bit shorter and much wider than a human. Your arms are 35% shorter than a human."_
+_"You are a bit shorter and much wider than a human. Your arms are 35% shorter than a human."_
 
 - Scale "height" changed to 0.8 (1.6 blocks height)
 - Scale "model width" changed to 1.1 (2.2 blocks wide)
@@ -56,7 +56,7 @@ Crustaceans who like to rave, preferably on beaches.
 
 
 # **Legs n' Chelipeds**
-**Description**: _"Your legs move much faster when in water, and you deal additional damage when wet."_
+_"Your legs move much faster when in water, and you deal additional damage when wet."_
 
 **Ability 1**:
 - Value of 0.04 added to movement speed (default is 0.1)
@@ -75,7 +75,7 @@ Crustaceans who like to rave, preferably on beaches.
 
 
 # **Pincers**
-**Description**: _"Melee weapons are half as effective because you have pincers instead of hands. You deal more damage with your pincers."_
+_"Melee weapons are half as effective because you have pincers instead of hands. You deal more damage with your pincers."_
 
 **Ability 1**:
 - Value of 6 added to attack damage (default is 2)
@@ -92,7 +92,7 @@ Crustaceans who like to rave, preferably on beaches.
 
 
 # **Shell**
-**Description**: _"Your have a natural layer of armour."_
+_"Your have a natural layer of armour."_
 
 Value of 6 added to armor (3 bars)
 
@@ -101,7 +101,7 @@ Value of 6 added to armor (3 bars)
 
 
 # **Crustacean Gills**
-**Description**: _"You have a much higher oxygen capacity, but you require moisture to breathe. You lose your breathe in very hot climates, including the Nether. Four levels of Fire Protection will allow you to remain cool and maintain moisture."_
+_"You have a much higher oxygen capacity, but you require moisture to breathe. You lose your breathe in very hot climates, including the Nether. Four levels of Fire Protection will allow you to remain cool and maintain moisture."_
 
 **Ability 1**:
 - A "flickering" water breathing effect. You will have an extended breathe because of it.
@@ -124,7 +124,7 @@ Value of 6 added to armor (3 bars)
 
 
 # **Crawler**
-**Description**: _"You descend down to the water you until stand on and walk on its floor, but move quite fast while walking. You can occasionally muster the strength to swim for a brief period of time."_
+_"You descend down to the water you until stand on and walk on its floor, but move quite fast while walking. You can occasionally muster the strength to swim for a brief period of time."_
 
 **Ability 1**:
 - Ignore Water (walking in water as if it were land instead of swimming)
@@ -147,7 +147,7 @@ Value of 6 added to armor (3 bars)
 
 
 # **Aqua Affinity**
-**Description**: _"You may break blocks underwater as others do on land."_
+_"You may break blocks underwater as others do on land."_
 
 - You can break blocks underwater as fast you would on land.
 
@@ -156,7 +156,7 @@ Value of 6 added to armor (3 bars)
 
 
 # **Seagrass Appetite**
-**Description**: _"You find seagrass absolutely delicious!"_
+_"You find seagrass absolutely delicious!"_
 
 - Seagrass becomes edible
 - Provides 5 food (2.5 shanks)
@@ -167,6 +167,6 @@ Value of 6 added to armor (3 bars)
 
 
 # **Unwieldy**
-**Description**: _"The way your hands are formed provide no way of holding a shield upright."_
+_"The way your hands are formed provide no way of holding a shield upright."_
 
 - You cannot use a shield.
