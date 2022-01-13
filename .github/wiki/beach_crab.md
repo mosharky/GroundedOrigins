@@ -1,4 +1,4 @@
-![](https://github.com/mosharky/GroundedOrigins/blob/master/.github/assets/beach_crab_icon.png?raw=true)
+![](https://github.com/mosharky/GroundedOrigins/blob/master/.github/assets/beach_crab_icon_large.png?raw=true)
 
 ***
 
@@ -47,7 +47,7 @@ _"Play the song of your people, and rave for your valor!"_
 # **Krusty**
 _"You are a bit shorter and much wider than a human. Your arms are 35% shorter than a human."_
 
-- Scale "height" changed to 0.8 (1.6 blocks height)
+- Scale "height" changed to 0.8 (1.44 blocks high)
 - Scale "model width" changed to 1.1 (2.2 blocks wide)
 - Scale "reach" changed to 0.65
 

@@ -1,4 +1,4 @@
-![](https://github.com/Mos-Origins/GroundedOrigins/blob/master/.github/assets/deer_icon.png?raw=true)
+![](https://github.com/Mos-Origins/GroundedOrigins/blob/master/.github/assets/deer_icon_large.png?raw=true)
 
 
 ***
@@ -14,7 +14,7 @@ _The cloven-hoofed inhabitant of the forests, and the fastest prey of the wilds.
 # **Vegetarian**
 _"You can't digest any meat."_
 
-- You're prevented from consuming anything food inside of the `origins:meat` tag
+- You're prevented from consuming anything food inside of the `origins:meat` tag (any meat food)
   - **Conditions:**
   - Food item _**NOT**_ in `origins:ignore_diet` tag
 
