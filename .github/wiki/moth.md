@@ -66,7 +66,7 @@ _"Every 25 seconds, you are able to launch yourself 10-20 blocks upwards."_
 
 
 # **Pollenator**
-_"Having 15 flowers within 20 blocks will boost your health by two hearts and allow you to bonemeal the block you're looking at, as long as you aren't exposed to sunlight.\nFlower forests make you stronger."_
+_"Having 15 flowers within 20 blocks will boost your health by two hearts and allow you to bonemeal the block you're looking at, as long as you aren't exposed to sunlight. Flower forests make you stronger."_
 
 - **Ability 1:**
 - 
