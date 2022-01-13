@@ -54,7 +54,7 @@
   "power.grounded_origins.moth/four_arms.name": "Four Arms",
   "power.grounded_origins.moth/four_arms.description": "You are able to climb vertical surfaces.",
   "power.grounded_origins.moth/water_vulnerability.name": "Water Vulnerability",
-  "power.grounded_origins.moth/water_vulnerability.description": "You recieve damage over time while in water.\nContact with water slows you down significantly due to your fluff and disables your flight.",
+  "power.grounded_origins.moth/water_vulnerability.description": "You recieve damage over time while in water.\nContact with water slows you down significantly due to your fluff and disables your flight. You can negate these effects using Water Protection enchantments.",
   "power.grounded_origins.moth/flammable.name": "Flammable",
   "power.grounded_origins.moth/flammable.description": "Your fluff causes you to take 50% more damage from heat-based sources.",
   "power.grounded_origins.moth/phototactic.name": "Phototactic",
