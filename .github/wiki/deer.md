@@ -39,7 +39,12 @@ _"You were born in the land of bark and leaves. The serenity of your lands provi
 # **Berry Good**
 _"Berry-related foods and drinks provide addtional nourishment. Berry bushes are also much easier to maneuver."_
 
-- 
+**Ability 1:**
+- You gain 5 more food from Sweet Berries or foods with the `deer/berry_foods` tag
+- You gain 6 more saturation from Sweet Berries or foods with the `deer/berry_foods` tag
+
+**Ability 2:**
+- You're immune to a Berry Bushes' thorns 
 
 
 ***
@@ -47,6 +52,10 @@ _"Berry-related foods and drinks provide addtional nourishment. Berry bushes are
 
 # **Oh Deer!**
 _"You can make a great escape when your vitality is low."_
+
+- You gain the Speed III effect
+  - **Conditions:**
+  - Health is less than or equal to 4
 
 
 ***
@@ -62,9 +71,14 @@ _"You have 8 hearts."_
 # **Springed Step**
 _"Your natural elasticity allows for a higher jump while taking longer strides."_
 
+You can jump a bit over two blocks while sprinting.
 
 ***
 
 
 # **Hooved Grace**
 _"Your hooves absorb the trauma of any great fall."_
+
+- You take 50% less damage from:
+  - Falling
+  - Flying into walls (Elytra)
