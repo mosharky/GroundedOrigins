@@ -64,6 +64,13 @@ You can "slide" (it's swimming, technically) on land
 ***
 
 
+# **Fragile**
+_"You have 3 less hearts of health than humans."_
+
+
+***
+
+
 # **Cold Embrace**
 _"You're quite resistant in snowy biomes, but weaker and slower the warmer the biome. 4-8 levels of Fire Protecion will grant you safe passage through any biome."_
 
