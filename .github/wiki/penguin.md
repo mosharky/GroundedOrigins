@@ -113,7 +113,7 @@ You're set on fire when in The Nether dimension
 - Must _NOT_ be wearing Fire Protection levels greater than or equal to 8
 
 **Ability 2:**
-You take 0.5x more damage from:
+You take 2x more damage from:
 - Lava
 - Being on fire
 - Being in fire

@@ -1,7 +1,7 @@
 {
     "type": "origins:modify_damage_taken",
     "modifier": {
-        "value": 0.5,
+        "value": 1,
         "operation": "multiply_total"
     },
     "damage_condition": {

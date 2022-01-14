@@ -124,7 +124,7 @@ _"You recieve damage over time while in water. Contact with water slows you down
 # **Flammable**
 _"Your fluff causes you to take 50% more damage from heat-based sources."_
 
-You take 0.5x more damage from:
+You take 2x more damage from:
 - Lava
 - Being on fire
 - Being in fire
