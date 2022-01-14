@@ -79,7 +79,7 @@ _"Having 15 flowers within 20 blocks will boost your health by two hearts and al
   - **Conditions:**
   - Must have 15 blocks in `minecraft:flowers` tag within 20-block radius
   - Must _NOT_ be exposed to sunlight
-- **Key:** 
+- **Key:** Sneak/Crouch
 
 **Ability 3:**
 - You gain Strength I when in a Flower Forest
