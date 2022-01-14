@@ -1,6 +1,4 @@
 {
-	"name": "Belly Sledding",
-	"description": "Your belly has less friction in colder environments, allowing you to flop onto your belly and slide!",
 	"type": "origins:multiple",
 	"slide": {
 		"type": "origins:swimming",
