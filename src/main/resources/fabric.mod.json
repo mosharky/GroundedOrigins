@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "grounded_origins",
+  "version": "${version}",
+
+  "name": "Grounded Origins",
+  "description": "An Origins addon that adds the Beach Crab, Deer, Moth, and Penguin origins.",
+  "authors": [
+    "mo_shark/momo, pachiremi"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Mos-Origins/GroundedOrigins",
+    "sources": "https://github.com/Mos-Origins/GroundedOrigins"
+  },
+
+  "license": "MIT",
+  "icon": "assets/grounded_origins/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "momo.grounded_origins.GroundedOrigins"
+    ]
+  },
+  "mixins": [
+    "grounded_origins.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
