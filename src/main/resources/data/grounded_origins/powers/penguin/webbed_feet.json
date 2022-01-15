@@ -1,0 +1,54 @@
+{
+    "type": "origins:multiple",
+    "swim_speed": {
+        "type": "origins:modify_swim_speed",
+        "modifier": {
+            "value": 1,
+            "operation": "multiply_base"
+        }
+    },
+    "reduced_kinetic_damage": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "value": -0.4,
+            "operation": "multiply_total"
+        },
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": {
+                "type": "origins:name",
+                "name": "fall"
+            }
+        }
+    },
+    "slowed": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "addition",
+            "value": -0.02
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:biome",
+                    "condition": {
+                        "type": "origins:temperature",
+                        "comparison": "<=",
+                        "compare_to": 0.4
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:frost_walker",
+                    "calculation": "sum",
+                    "comparison": ">=",
+                    "compare_to": 1
+                }
+            ]
+        }
+    }
+}

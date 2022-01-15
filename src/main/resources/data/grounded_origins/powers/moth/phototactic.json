@@ -1,0 +1,153 @@
+{
+    "type": "origins:multiple",
+    "lanterns_buff": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 10,
+        "effects": {
+            "effect": "minecraft:regeneration",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "grounded_origins:moth/lanterns"
+                    },
+                    "radius": "15",
+                    "shape": "cube"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:exposed_to_sun"
+                }
+            ]
+        }
+    },
+    "glowstones_buff": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 10,
+        "effects": {
+            "effect": "minecraft:slow_falling",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "grounded_origins:moth/glowstone_lights"
+                    },
+                    "radius": "15",
+                    "shape": "cube"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:exposed_to_sun"
+                }
+            ]
+        }
+    },
+    "pumpkins_buff": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 10,
+        "effect": {
+            "effect": "minecraft:resistance",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "grounded_origins:moth/pumpkin_lights"
+                    },
+                    "radius": "15",
+                    "shape": "cube"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:exposed_to_sun"
+                }
+            ]
+        }
+    },
+    "souls_buff": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 10,
+        "effect": {
+            "effect": "minecraft:haste",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "grounded_origins:moth/soul_lights"
+                    },
+                    "radius": "15",
+                    "shape": "cube"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:exposed_to_sun"
+                }
+            ]
+        }
+    },
+    "sea_buff": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 10,
+        "effect": {
+            "effect": "minecraft:dolphins_grace",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "grounded_origins:moth/sea_lights"
+                    },
+                    "radius": "15",
+                    "shape": "cube"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:exposed_to_sun"
+                }
+            ]
+        }
+    }
+}
