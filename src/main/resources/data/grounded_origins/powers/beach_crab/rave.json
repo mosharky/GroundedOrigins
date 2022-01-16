@@ -16,7 +16,7 @@
             {
                 "type": "origins:play_sound",
                 "sound": "grounded_origins:rave",
-                "volume": 0.75
+                "volume": 0.5
             }
         ]
 
