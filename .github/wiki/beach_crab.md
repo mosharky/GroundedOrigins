@@ -1,4 +1,4 @@
-![](https://github.com/mosharky/GroundedOrigins/blob/master/.github/assets/beach_crab_icon_large.png?raw=true)
+![](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.18.1/.github/assets/beach_crab_icon_large.png?raw=true)
 
 ***
 

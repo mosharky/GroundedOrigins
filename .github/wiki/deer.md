@@ -1,4 +1,4 @@
-![](https://github.com/Mos-Origins/GroundedOrigins/blob/master/.github/assets/deer_icon_large.png?raw=true)
+![](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.18.1/.github/assets/deer_icon_large.png?raw=true)
 
 
 ***
