@@ -72,7 +72,7 @@ _"Having 15 flowers within 20 blocks will make you far more resilient, and allow
 - You gain a Resistance III effect
   - **Conditions:**
   - Must have 15 blocks in `minecraft:flowers` tag within 20-block radius (any flower, basically)
-  - Must be in 20-block radius for over 10 seconds
+  - Must be in the 20-block radius for over 10 seconds
 
 **Ability 2:**
 - You can bonemeal the block you're standing on or in
