@@ -20,11 +20,11 @@
   "entrypoints": {
     "main": [
       "momo.grounded_origins.GroundedOrigins"
+    ],
+    "client": [
+      "momo.grounded_origins.TernaryKeybind"
     ]
   },
-  "mixins": [
-    "grounded_origins.mixins.json"
-  ],
 
   "depends": {
     "java": ">=17",

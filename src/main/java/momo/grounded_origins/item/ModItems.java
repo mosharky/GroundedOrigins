@@ -9,22 +9,16 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
-    public static final Item BEACH_CRAB_ICON = registerItem("beach_crab_icon",
-            new Item(new FabricItemSettings()));
-    public static final Item DEER_ICON = registerItem("deer_icon",
-            new Item(new FabricItemSettings()));
-    public static final Item MOTH_ICON = registerItem("moth_icon",
-            new Item(new FabricItemSettings()));
-    public static final Item PENGUIN_ICON = registerItem("penguin_icon",
-            new Item(new FabricItemSettings()));
+    public static final Item BEACH_CRAB_ICON = new Item(new FabricItemSettings());
+    public static final Item DEER_ICON = new Item(new FabricItemSettings());
+    public static final Item MOTH_ICON = new Item(new FabricItemSettings());
+    public static final Item PENGUIN_ICON = new Item(new FabricItemSettings());
 
-
-    private static Item registerItem(String name, Item item) {
-        return Registry.register(Registry.ITEM, new Identifier(GroundedOrigins.MOD_ID, name), item);
-    }
-
-    public static void registerModItems() {
-        GroundedOrigins.LOGGER.info("Registering icons for " + GroundedOrigins.MOD_ID);
+    public static void init() {
+        Registry.register(Registry.ITEM, new Identifier(GroundedOrigins.MOD_ID, "beach_crab_icon"), BEACH_CRAB_ICON);
+        Registry.register(Registry.ITEM, new Identifier(GroundedOrigins.MOD_ID, "deer_icon"), DEER_ICON);
+        Registry.register(Registry.ITEM, new Identifier(GroundedOrigins.MOD_ID, "moth_icon"), MOTH_ICON);
+        Registry.register(Registry.ITEM, new Identifier(GroundedOrigins.MOD_ID, "beach_crab_icon"), PENGUIN_ICON);
     }
 
 }

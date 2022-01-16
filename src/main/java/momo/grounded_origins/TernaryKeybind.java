@@ -1,4 +1,4 @@
-package momo.grounded_origins.common;
+package momo.grounded_origins;
 
 import io.github.apace100.apoli.ApoliClient;
 import io.github.apace100.origins.Origins;
