@@ -7,11 +7,11 @@ modId="grounded_origins"
 version="${file.jarVersion}"
 displayName="Grounded Origins"
 displayURL="https://www.curseforge.com/members/mo_shark/projects"
-logoFile="assets/grounded_origins/icon.png"
+logoFile="icon.png"
 credits="Much love to the Origins discord."
 authors="mo_shark/momo, pachiremi"
 description='''
-An Origins addon that adds the Beach Crab, Deer, Moth, and Penguin origins. 
+An Origins addon that adds the Beach Crab, Deer, Moth, and Penguin origins.
 '''
 # Forge
 [[dependencies.grounded_origins]]
