@@ -66,12 +66,13 @@ _"Every 25 seconds, you are able to launch yourself 10-20 blocks upwards."_
 
 
 # **Pollenator**
-_"Having 15 flowers within 20 blocks will boost your health by two hearts and allow you to bonemeal the block you're looking at, as long as you aren't exposed to sunlight. Flower forests make you stronger."_
+_"Having 15 flowers within 20 blocks will make you far more resilient, and allow you to bonemeal the block you're looking at, as long as you aren't exposed to sunlight.\nFlower forests make you stronger."_
 
 **Ability 1:**
-- You get 4 more health (2 hearts)
+- You gain a Resistance III effect
   - **Conditions:**
-  - Must have 15 blocks in `minecraft:flowers` tag within 20-block radius
+  - Must have 15 blocks in `minecraft:flowers` tag within 20-block radius (any flower, basically)
+  - Must be in 20-block radius for over 10 seconds
 
 **Ability 2:**
 - You can bonemeal the block you're standing on or in

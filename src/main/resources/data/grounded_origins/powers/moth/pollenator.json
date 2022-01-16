@@ -1,12 +1,16 @@
 {
     "type": "origins:multiple",
-    "health_boost": {
-        "type": "origins:conditioned_attribute",
-        "modifier": {
-            "attribute": "minecraft:generic.max_health",
-            "operation": "addition",
-            "value": 4,
-            "tick_rate": 60
+    "resistance": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 10,
+        "effects": {
+            "effect": "minecraft:resistance",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false,
+            "amplifier": 2
         },
         "condition": {
             "type": "origins:block_in_radius",
