@@ -1,20 +1,19 @@
-package momo.grounded_origins;
+package momo.grounded_origins.registry;
 
 import io.github.apace100.apoli.ApoliClient;
 import io.github.apace100.origins.Origins;
-import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import org.lwjgl.glfw.GLFW;
 
-public class TernaryKeybind implements ClientModInitializer {
+public class TernaryKeybind {
 
     private static KeyBinding keyBinding;
 
-    @Override
-    public void onInitializeClient() {
-
+    public static void init() {
+        if (FabricLoader.getInstance().isModLoaded("extrakeybinds")) return;
         keyBinding = new KeyBinding(
                 "key.origins.ternary_active",
                 InputUtil.Type.KEYSYM,
@@ -25,5 +24,4 @@ public class TernaryKeybind implements ClientModInitializer {
         ApoliClient.registerPowerKeybinding("ternary", keyBinding);
         KeyBindingHelper.registerKeyBinding(keyBinding);
     }
-
 }

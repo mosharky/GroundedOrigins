@@ -1,7 +1,8 @@
 package momo.grounded_origins;
 
-import momo.grounded_origins.item.ModItems;
-import momo.grounded_origins.sounds.RaveSound;
+import momo.grounded_origins.registry.Icons;
+import momo.grounded_origins.registry.RaveSound;
+import momo.grounded_origins.registry.TernaryKeybind;
 import net.fabricmc.api.ModInitializer;
 
 
@@ -11,6 +12,7 @@ public class GroundedOrigins implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		RaveSound.init();
-		ModItems.init();
+		Icons.init();
+		TernaryKeybind.init();
 	}
 }

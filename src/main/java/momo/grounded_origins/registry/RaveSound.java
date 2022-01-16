@@ -1,4 +1,4 @@
-package momo.grounded_origins.sounds;
+package momo.grounded_origins.registry;
 
 import momo.grounded_origins.GroundedOrigins;
 import net.minecraft.sound.SoundEvent;
