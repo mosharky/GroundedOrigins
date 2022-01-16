@@ -30,7 +30,7 @@
                     "block_action": {
                         "type": "origins:offset",
                         "action": {
-                            "type": "ope:bonemeal"
+                            "type": "origins:bonemeal"
                         },
                         "y": -1
                     }
@@ -40,7 +40,7 @@
                     "block_action": {
                         "type": "origins:offset",
                         "action": {
-                            "type": "ope:bonemeal"
+                            "type": "origins:bonemeal"
                         },
                         "y": 0
                     }
