@@ -12,9 +12,8 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 
-version = 'v1.0.0'
-group = 'momo' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'grounded_origins'
+version = project.mod_version
+group = project.maven_group
 
 minecraft {
     mappings channel: 'official', version: '1.16.5'
@@ -54,9 +53,7 @@ minecraft {
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'grounded_origins', '--all',
-                    '--output', file('src/generated/resources/'),
-                    '--existing', file('src/main/resources/')
+            args '--mod', 'grounded_origins', '--all', '--existing', file('src/main/resources/')
 
             mods {
                 grounded_origins {
@@ -86,7 +83,7 @@ aka 'curse.maven:descriptor-projectid:fileid'
     <fileid> -> The file id of the file you want to add as a dependency.
 */
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.5-36.2.23'
+    minecraft group: 'net.minecraftforge', name: 'forge', version: "${minecraft_version}-${forge_version}"
     runtimeOnly fg.deobf('curse.maven:origins-474438:3426062')
     runtimeOnly fg.deobf('curse.maven:ope-524997:3517860')
     runtimeOnly fg.deobf('curse.maven:pehkui-319596:3577077')
@@ -105,21 +102,10 @@ jar {
             "Implementation-Title": project.name,
             "Implementation-Version": project.version,
             "Implementation-Vendor" :"mo_shark",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
 }
 
 jar.finalizedBy('reobfJar')
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifact jar
-        }
-    }
-    repositories {
-        maven {
-            url "file:///${project.projectDir}/mcmodsrepo"
-        }
-    }
-}
