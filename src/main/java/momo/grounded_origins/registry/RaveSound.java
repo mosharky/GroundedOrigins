@@ -1,6 +1,6 @@
-package com.momo.grounded_origins.util;
+package momo.grounded_origins.registry;
 
-import com.momo.grounded_origins.GroundedOrigins;
+import momo.grounded_origins.GroundedOrigins;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -8,7 +8,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class ModSoundEvents {
+public class RaveSound {
 
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, GroundedOrigins.MOD_ID);

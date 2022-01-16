@@ -13,12 +13,9 @@ apply plugin: 'maven-publish'
 
 
 version = 'v1.0.0'
-group = 'com.momo.grounded_origins' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = 'momo' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'grounded_origins'
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(8) // Mojang ships Java 8 to end users, so your mod should target Java 8.
-
-println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
     mappings channel: 'official', version: '1.16.5'
     runs {
@@ -57,7 +54,9 @@ minecraft {
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'grounded_origins', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'grounded_origins', '--all',
+                    '--output', file('src/generated/resources/'),
+                    '--existing', file('src/main/resources/')
 
             mods {
                 grounded_origins {
