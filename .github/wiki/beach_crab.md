@@ -80,12 +80,18 @@ _"Melee weapons are half as effective because you have pincers instead of hands.
 **Ability 1**:
 - Value of 6 added to attack damage (default is 2)
   - **Conditions**:
-  - Must _**NOT**_ have item with `forge:tools` tag (in other words, any tool/weapon) in mainhand slot
+  - Must _**NOT**_ have item in mainhand slot: 
+    - With `forge:tools` tag (if using Forge)
+    - With `c:tools` tag (if using Fabric)
+    - In other words, any tool/weapon
 
 **Ability 2**:
 - 50% less damage dealt
   - **Conditions**:
-  - Must have item with `forge:tools` tag (in other words, any tool/weapon) in mainhand slot
+  - Must have item in mainhand slot:
+    - With `forge:tools` tag (if using Forge)
+    - With `c:tools` tag (if using Fabric)
+    - In other words, any tool/weapon
 
 
 ***
