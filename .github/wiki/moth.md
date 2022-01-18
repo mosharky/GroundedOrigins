@@ -80,7 +80,7 @@ _"Having 15 flowers within 20 blocks will make you far more resilient, and allow
   - **Conditions:**
   - Must have 15 blocks in `minecraft:flowers` tag within 20-block radius
   - Must _NOT_ be exposed to sunlight
-- **Key:** Sneak/Crouch
+- **Key:** Secondary
 
 **Ability 3:**
 - You gain Strength I when in a Flower Forest
@@ -94,7 +94,7 @@ _"Having 15 flowers within 20 blocks will make you far more resilient, and allow
 _"You are able to climb vertical surfaces."_
 
 - You can climb any surface
-- **Key:** Ternary (toggle on/off)
+- **Key:** Quaternary (toggle on/off)
 
 
 ***
@@ -177,7 +177,7 @@ _"Your vision is adapted to dark spaces, but you feel weaker when exposed to the
 
 **Ability 1:**
 - Toggle-able Night Vision
-- **Key:** Secondary
+- **Key:** Ternary
 
 **Ability 2:**
 - You get Weakness I
