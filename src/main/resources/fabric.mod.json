@@ -22,6 +22,9 @@
   "entrypoints": {
     "main": [
       "momo.grounded_origins.GroundedOrigins"
+    ],
+    "client": [
+      "momo.grounded_origins.registry.Keybinds"
     ]
   },
 
