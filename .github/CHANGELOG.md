@@ -3,13 +3,13 @@
 
 ### FABRIC:
 - Added Quaternary keybind
+- Fixed server crash
 
 ### BOTH:
 - Changed Moth keybinds:
   - Pollenator Bonemeal: Secondary
   - Nocturnal: Ternary
   - Four Arms: Quaternary
-- Fixed server crash
 
 
 ***
