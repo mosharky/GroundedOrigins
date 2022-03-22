@@ -94,9 +94,9 @@ aka 'curse.maven:descriptor-projectid:fileid'
 */
 dependencies {
     minecraft group: 'net.minecraftforge', name: 'forge', version: "${minecraft_version}-${forge_version}"
-    runtimeOnly fg.deobf('curse.maven:origins-474438:3707641')
-    runtimeOnly fg.deobf('curse.maven:pehkui-319596:357784')
-    runtimeOnly fg.deobf('curse.maven:caelus-308989:3650485')
+    //runtimeOnly fg.deobf('curse.maven:origins-forge-474438:3707463')
+    //runtimeOnly fg.deobf('curse.maven:pehkui-319596:357784')
+    //runtimeOnly fg.deobf('curse.maven:caelus-308989:3650485')
 }
 
 def resourceTargets = ['META-INF/mods.toml', 'pack.mcmeta']
