@@ -41,7 +41,7 @@
   "power.grounded_origins.deer/springed_step.name": "Springed Step",
   "power.grounded_origins.deer/springed_step.description": "Your natural elasticity allows for a higher jump while taking longer strides.",
   "power.grounded_origins.deer/hooved_grace.name": "Hooved Grace",
-  "power.grounded_origins.deer/hooved_grace.description": "Your hooves absorb the trauma of any great fall.",
+  "power.grounded_origins.deer/hooved_grace.description": "Your hooves absorb most of the trauma of any great fall.",
 
   "power.grounded_origins.moth/insect.name": "Insect",
   "power.grounded_origins.moth/insect.description": "You are 4 times smaller than a regular human. You have 25% less attack/build range. You have 4 hearts, but your body is incredbily light, allowing you take a fall or collision from any height",
@@ -50,7 +50,11 @@
   "power.grounded_origins.moth/flutter.name": "Flutter",
   "power.grounded_origins.moth/flutter.description": "Every 25 seconds, you are able to launch yourself 10-20 blocks upwards.",
   "power.grounded_origins.moth/pollenator.name": "Pollenator",
-  "power.grounded_origins.moth/pollenator.description": "Having 15 flowers within 20 blocks will make you far more resilient, and allow you to bonemeal the block you're looking at, as long as you aren't exposed to sunlight.\nFlower forests make you stronger.",
+  "power.grounded_origins.moth/pollenator.description": "Having 15 flowers or 1 spore blossom within 20 blocks will make you far more resilient, and allow you to bonemeal the block you're standing on, as long as you aren't exposed to sunlight.\nFlower forests make you stronger.",
+  "power.grounded_origins.moth/fibrous_diet.name": "Fibrous Diet",
+  "power.grounded_origins.moth/fibrous_diet.description": "You can only eat bits of leather, paper, books, string, and wool. You can also eat other highly fibrous foods.",
+  "power.grounded_origins.moth/nectar_production.name": "Nectar Production",
+  "power.grounded_origins.moth/nectar_production.description": "You can produce & drink nectar by consuming Flower Stamens, which you can extract from flowers in a crafting grid.\nNectar is highly nutritious and boosts your health.",
   "power.grounded_origins.moth/four_arms.name": "Four Arms",
   "power.grounded_origins.moth/four_arms.description": "You are able to climb vertical surfaces.",
   "power.grounded_origins.moth/water_vulnerability.name": "Water Vulnerability",
@@ -61,8 +65,6 @@
   "power.grounded_origins.moth/phototactic.description": "Your infatuation with light has led you to evolve varied effects when around Lanterns, Glowstone, Soul-lights, Sea Lanterns, and Pumpkin-lights for a long period of time, as long as you aren't in sunlight.",
   "power.grounded_origins.moth/nocturnal.name": "Nocturnal",
   "power.grounded_origins.moth/nocturnal.description": "Your vision is adapted to dark spaces, but you feel weaker when exposed to the sun.",
-  "power.grounded_origins.moth/fibrous_diet.name": "Fibrous Diet",
-  "power.grounded_origins.moth/fibrous_diet.description": "You're able to eat wool, leather, paper, and books.",
 
   "power.grounded_origins.penguin/aquatic_diet.name": "Aquatic Diet",
   "power.grounded_origins.penguin/aquatic_diet.description": "You can only eat seafood, and it sustains you much farther.",
@@ -80,6 +82,11 @@
   "power.grounded_origins.penguin/happy_feet.description": "You're a 0.25 blocks shorter than a human. Your flightless wings provide more attack speed, but less reach.",
   "power.grounded_origins.penguin/webbed_feet.name": "Webbed Feet",
   "power.grounded_origins.penguin/webbed_feet.description": "You can swim much faster and take less damage from a fall, but move slower when not in a very cold biome. Alternatively, you can equip Frost Walker boots to maintain the same speed regardless of biome.",
+
+  "item.grounded_origins.flower_stamens": "Flower Stamens",
+  "item.grounded_origins.book_bite": "Book-bite",
+  "item.grounded_origins.paper_shreds": "Paper Shreds",
+  "item.grounded_origins.fibrous_string": "Fibrous String",
 
   "key.origins.ternary_active": "Active Power (Ternary)",
   "key.origins.quaternary_active": "Active Power (Quaternary)"
