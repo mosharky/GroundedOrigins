@@ -21,16 +21,16 @@ public class Items {
 
     // Moth foods
     public static final Item FLOWER_STAMENS = new Item(new FabricItemSettings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(8).saturationModifier(0.9f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 20*120, 0, true, false), 1f).build())
+            .food(new FoodComponent.Builder().alwaysEdible().build())
     );
     public static final Item FIBROUS_STRING = new Item(new FabricItemSettings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(6).saturationModifier(0.8f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 20*60, 0, true, false), 1f).build())
+            .food(new FoodComponent.Builder().alwaysEdible().build())
     );
     public static final Item PAPER_SHREDS = new Item(new FabricItemSettings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(4).saturationModifier(0.8f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 20*60, 0, true, false), 1f).build())
+            .food(new FoodComponent.Builder().alwaysEdible().build())
     );
     public static final Item BOOK_BITE = new Item(new FabricItemSettings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(8).saturationModifier(0.8f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 20*60, 0, true, false), 0.25f).build())
+            .food(new FoodComponent.Builder().alwaysEdible().build())
     );
 
     public static void init() {

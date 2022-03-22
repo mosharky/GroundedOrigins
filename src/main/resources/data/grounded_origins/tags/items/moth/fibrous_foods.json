@@ -1,0 +1,16 @@
+{
+    "replace": false,
+    "values": [
+        "grounded_origins:flower_stamens",
+        "grounded_origins:fibrous_string",
+        "grounded_origins:paper_shreds",
+        "grounded_origins:book_bite",
+        "apple",
+        "carrot",
+        "beetroot",
+        "beetroot_soup",
+        "sweet_berries",
+        "glow_berries",
+        "dried_kelp"
+    ]
+}
