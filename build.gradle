@@ -1,25 +1,29 @@
 buildscript {
     repositories {
         maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://maven.parchmentmc.org' }
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath 'org.parchmentmc:librarian:1.+'
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
+
 
 
 version = "forge-" + project.minecraft_version + "-" + project.mod_version
 group = mod_base_package
 archivesBaseName = mod_id
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(8)
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'official', version: '1.16.5'
+    mappings channel: project.mappings_channel, version: project.mappings_version
     runs {
         client {
             workingDirectory project.file('run')
@@ -90,12 +94,9 @@ aka 'curse.maven:descriptor-projectid:fileid'
 */
 dependencies {
     minecraft group: 'net.minecraftforge', name: 'forge', version: "${minecraft_version}-${forge_version}"
-    runtimeOnly fg.deobf('curse.maven:origins-474438:3426062')
-    runtimeOnly fg.deobf('curse.maven:ope-524997:3517860')
-    runtimeOnly fg.deobf('curse.maven:pehkui-319596:3577077')
-    runtimeOnly fg.deobf('curse.maven:clothconfig-348521:3559634')
-    runtimeOnly fg.deobf('curse.maven:architectury-419699:3587404')
-    runtimeOnly fg.deobf('curse.maven:caelus-308989:3522094')
+    runtimeOnly fg.deobf('curse.maven:origins-474438:3707641')
+    runtimeOnly fg.deobf('curse.maven:pehkui-319596:357784')
+    runtimeOnly fg.deobf('curse.maven:caelus-308989:3650485')
 }
 
 def resourceTargets = ['META-INF/mods.toml', 'pack.mcmeta']
