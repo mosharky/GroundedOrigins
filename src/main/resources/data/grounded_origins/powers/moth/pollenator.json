@@ -21,7 +21,7 @@
                         "type": "origins:in_tag",
                         "tag": "minecraft:flowers"
                     },
-                    "radius": "20",
+                    "radius": 20,
                     "shape": "cube",
                     "comparison": ">=",
                     "compare_to": 15
@@ -32,7 +32,7 @@
                         "type": "origins:block",
                         "block": "minecraft:spore_blossom"
                     },
-                    "radius": "20",
+                    "radius": 20,
                     "shape": "cube",
                     "comparison": ">=",
                     "compare_to": 1
@@ -88,7 +88,7 @@
                                 "type": "origins:in_tag",
                                 "tag": "minecraft:flowers"
                             },
-                            "radius": "20",
+                            "radius": 20,
                             "shape": "cube",
                             "comparison": ">=",
                             "compare_to": 15
@@ -99,7 +99,7 @@
                                 "type": "origins:block",
                                 "block": "minecraft:spore_blossom"
                             },
-                            "radius": "20",
+                            "radius": 20,
                             "shape": "cube",
                             "comparison": ">=",
                             "compare_to": 1
