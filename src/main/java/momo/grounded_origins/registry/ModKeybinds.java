@@ -11,7 +11,7 @@ import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
 
-public class Keybinds implements ClientModInitializer {
+public class ModKeybinds implements ClientModInitializer {
 
     public List<String> keys = List.of("ternary","quaternary");
 

@@ -1,6 +1,6 @@
 package momo.grounded_origins;
 
-import momo.grounded_origins.registry.Items;
+import momo.grounded_origins.registry.ModItems;
 import momo.grounded_origins.registry.RaveSound;
 import net.fabricmc.api.ModInitializer;
 
@@ -11,6 +11,6 @@ public class GroundedOrigins implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		RaveSound.init();
-		Items.init();
+		ModItems.init();
 	}
 }

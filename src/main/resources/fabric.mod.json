@@ -24,7 +24,7 @@
       "momo.grounded_origins.GroundedOrigins"
     ],
     "client": [
-      "momo.grounded_origins.registry.Keybinds"
+      "momo.grounded_origins.registry.ModKeybinds"
     ]
   },
 

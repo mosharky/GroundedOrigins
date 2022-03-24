@@ -2,8 +2,6 @@ package momo.grounded_origins.registry;
 
 import momo.grounded_origins.GroundedOrigins;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -11,7 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 
-public class Items {
+public class ModItems {
 
     // Icons
     public static final Item BEACH_CRAB_ICON = new Item(new FabricItemSettings());
