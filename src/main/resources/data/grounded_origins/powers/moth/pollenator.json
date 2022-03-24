@@ -13,15 +13,31 @@
             "amplifier": 2
         },
         "condition": {
-            "type": "origins:block_in_radius",
-            "block_condition": {
-                "type": "origins:in_tag",
-                "tag": "minecraft:flowers"
-            },
-            "radius": "20",
-            "shape": "cube",
-            "comparison": ">=",
-            "compare_to": 15
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "minecraft:flowers"
+                    },
+                    "radius": "20",
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 15
+                },
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "minecraft:spore_blossom"
+                    },
+                    "radius": "20",
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                }
+            ]
         }
     },
     "bonemeal": {
@@ -34,7 +50,7 @@
                     "block_action": {
                         "type": "origins:offset",
                         "action": {
-                            "type": "ope:bonemeal"
+                            "type": "origins:bonemeal"
                         },
                         "y": -1
                     }
@@ -44,7 +60,7 @@
                     "block_action": {
                         "type": "origins:offset",
                         "action": {
-                            "type": "ope:bonemeal"
+                            "type": "origins:bonemeal"
                         },
                         "y": 0
                     }
@@ -64,15 +80,31 @@
             "type": "origins:and",
             "conditions": [
                 {
-                    "type": "origins:block_in_radius",
-                    "block_condition": {
-                        "type": "origins:in_tag",
-                        "tag": "minecraft:flowers"
-                    },
-                    "radius": "20",
-                    "shape": "cube",
-                    "comparison": ">=",
-                    "compare_to": 15
+                    "type": "origins:or",
+                    "conditions":[
+                        {
+                            "type": "origins:block_in_radius",
+                            "block_condition": {
+                                "type": "origins:in_tag",
+                                "tag": "minecraft:flowers"
+                            },
+                            "radius": "20",
+                            "shape": "cube",
+                            "comparison": ">=",
+                            "compare_to": 15
+                        },
+                        {
+                            "type": "origins:block_in_radius",
+                            "block_condition": {
+                                "type": "origins:block",
+                                "block": "minecraft:spore_blossom"
+                            },
+                            "radius": "20",
+                            "shape": "cube",
+                            "comparison": ">=",
+                            "compare_to": 1
+                        }
+                    ]
                 },
                 {
                     "inverted": true,

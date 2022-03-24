@@ -2,18 +2,25 @@ buildscript {
     repositories {
         maven { url = 'https://maven.minecraftforge.net' }
         maven { url = 'https://maven.parchmentmc.org' }
+        maven { url 'https://repo.spongepowered.org/maven' }
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
         classpath 'org.parchmentmc:librarian:1.+'
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
+// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
+apply plugin: 'org.spongepowered.mixin'
 
+mixin {
+    add sourceSets.main, "origins.refmap.json"
+}
 
 
 version = "forge-" + project.minecraft_version + "-" + project.mod_version
@@ -77,26 +84,26 @@ minecraft {
 repositories {
     maven {
         url "https://cursemaven.com"
+        content {
+            includeGroup 'curse.maven'
+        }
     }
 }
 
 /* https://www.cursemaven.com/ curse project dependency stuff
 The dependency format is as follows: curse.maven:<descriptor>-<projectid>:<fileid>
 aka 'curse.maven:descriptor-projectid:fileid'
-
     curse.maven -> Required. Marks the dependency to be resolved by the curse maven website.
-
     <descriptor> -> Can be anything you want. This file downloaded will have this in it's name, so it's good to use this to show which files are what. A good practice would be to have this as the project slug.
-
     <projectid> -> The project id of the file you want to add as a dependency.
-
     <fileid> -> The file id of the file you want to add as a dependency.
 */
 dependencies {
     minecraft group: 'net.minecraftforge', name: 'forge', version: "${minecraft_version}-${forge_version}"
     //runtimeOnly fg.deobf('curse.maven:origins-forge-474438:3707463')
-    //runtimeOnly fg.deobf('curse.maven:pehkui-319596:357784')
-    //runtimeOnly fg.deobf('curse.maven:caelus-308989:3650485')
+    runtimeOnly fg.deobf('curse.maven:pehkui-319596:3708689')
+    runtimeOnly fg.deobf('curse.maven:caelus-308989:3650485')
+    implementation fg.deobf("curse.maven:origins-474438:3708521")
 }
 
 def resourceTargets = ['META-INF/mods.toml', 'pack.mcmeta']
@@ -141,17 +148,3 @@ jar {
 }
 
 jar.finalizedBy('reobfJar')
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifact jar
-        }
-    }
-    repositories {
-        maven {
-            url "file://${project.projectDir}/mcmodsrepo"
-        }
-    }
-}
-

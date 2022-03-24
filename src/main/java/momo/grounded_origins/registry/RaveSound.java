@@ -20,7 +20,7 @@ public class RaveSound {
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(GroundedOrigins.MOD_ID, name)));
     }
 
-    public static void register(IEventBus eventBus) {
+    public static void init(IEventBus eventBus) {
         SOUND_EVENTS.register(eventBus);
     }
 

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "grounded_origins:item/penguin_icon"
+    "layer0": "grounded_origins:item/icons/penguin_icon"
   }
 }

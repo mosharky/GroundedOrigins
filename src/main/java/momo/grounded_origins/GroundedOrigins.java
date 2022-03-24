@@ -1,9 +1,12 @@
 package momo.grounded_origins;
 
-import momo.grounded_origins.registry.Icons;
+import momo.grounded_origins.registry.ModItems;
+import momo.grounded_origins.registry.ModKeybinds;
 import momo.grounded_origins.registry.RaveSound;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -16,8 +19,9 @@ public class GroundedOrigins {
 
         FMLJavaModLoadingContext.get().getModEventBus();
 
-        Icons.register(eventBus);
-        RaveSound.register(eventBus);
+        ModItems.init(eventBus);
+        RaveSound.init(eventBus);
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> ModKeybinds::init);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

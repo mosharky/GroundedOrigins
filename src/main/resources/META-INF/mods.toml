@@ -8,7 +8,7 @@ version="${mod_version}"
 displayName="${mod_name}"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/grounded-origins"
 logoFile="icon.png"
-authors="mo_shark/momo, pachiremi"
+authors="mo_shark/momo, girlbossremi"
 description='''${mod_description}'''
 # Forge
 [[dependencies.${mod_id}]]
@@ -23,21 +23,5 @@ description='''${mod_description}'''
     modId="minecraft"
     mandatory=true
     versionRange="[1.18.1]"
-    ordering="NONE"
-    side="BOTH"
-
-# Origins Forge
-[[dependencies.${mod_id}]]
-    modId="origins"
-    mandatory=true
-    versionRange="[1.3,)"
-    ordering="NONE"
-    side="BOTH"
-
-# Pehkui
-[[dependencies.${mod_id}]]
-    modId="pehkui"
-    mandatory=true
-    versionRange="[3.1.0]"
     ordering="NONE"
     side="BOTH"
