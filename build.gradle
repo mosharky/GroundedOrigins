@@ -18,10 +18,6 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-mixin {
-    add sourceSets.main, "origins.refmap.json"
-}
-
 
 version = "forge-" + project.minecraft_version + "-" + project.mod_version
 group = mod_base_package
