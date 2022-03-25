@@ -1,18 +1,15 @@
 [CHANGELOG](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.18.1/.github/CHANGELOG.md)
-***
-
-
-# **[1.1.0.0] - 2022/03/21**
+# **[1.1.0] - 2022/03/24**
 
 ### FABRIC:
 - Updated dependencies
 
 ### FORGE:
 - Ported to 1.18.1
+- **Note**: _Keep in mind that some things may not work correctly as the Origins Forge port continues to update_
 - Removed Origins Power Expansion dependency
 
 ### BOTH:
-- Now using a 4-digit version number
 - Added new foods that can only be crafted with the Moth Origin:
   - **Note**: _This replaces the old system "Fibrous Diet" power system, where you could eat otherwise inedible items like Leather, Paper, Wool, etc_
   - Flower Stamens
@@ -34,7 +31,7 @@
     - Flower Stamens
     - Fibrous String
     - Paper Shreds
-    - Book-bite
+    - Book-Bite
     - Apple
     - Carrot
     - Beetroot
