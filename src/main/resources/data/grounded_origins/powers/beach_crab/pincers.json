@@ -14,7 +14,7 @@
             "item_condition": {
                 "type": "origins:ingredient",
                 "ingredient": {
-                    "tag": "c:tools"
+                    "tag": "fabric:tools"
                 }
             }
         }
@@ -32,7 +32,7 @@
             "item_condition": {
                 "type": "origins:ingredient",
                 "ingredient": {
-                    "tag": "c:tools"
+                    "tag": "fabric:tools"
                 }
             }
         }
