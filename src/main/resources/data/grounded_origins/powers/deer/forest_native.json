@@ -1,48 +1,48 @@
 {
-	"type": "origins:stacking_status_effect",
-	"min_stacks": -20,
-	"max_stacks": 6,
-	"duration_per_stack": 20,
-	"effects": [
-		{
-			"effect": "minecraft:speed",
-			"is_ambient": true,
-			"show_particles": false,
-			"show_icon": false
-		},
-		{
-			"effect": "minecraft:regeneration",
-			"is_ambient": true,
-			"show_particles": false,
-			"show_icon": false
-		}
-	],
-	"condition": {
-		"type": "origins:or",
-		"conditions": [
-			{
-				"type": "origins:biome",
-				"condition": {
-					"type": "origins:category",
-					"category": "forest"
-				}
-			},
-			{
-				"type": "origins:biome",
-				"condition": {
-					"type": "origins:temperature",
-					"comparison": "==",
-					"compare_to": 0.6
-				}
-			},
-			{
-				"type": "origins:biome",
-				"condition": {
-					"type": "origins:temperature",
-					"comparison": "==",
-					"compare_to": 0.7
-				}
-			}
-		]
-	}
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -20,
+    "max_stacks": 6,
+    "duration_per_stack": 20,
+    "effects": [
+        {
+            "effect": "minecraft:speed",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:regeneration",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    ],
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:category",
+                    "category": "forest"
+                }
+            },
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": "==",
+                    "compare_to": 0.6
+                }
+            },
+            {
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": "==",
+                    "compare_to": 0.7
+                }
+            }
+        ]
+    }
 }

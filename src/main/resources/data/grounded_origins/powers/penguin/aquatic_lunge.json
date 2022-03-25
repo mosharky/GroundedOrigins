@@ -1,40 +1,40 @@
 {
-	"type": "origins:active_self",
-	"cooldown": 200,
-	"hud_render": {
-		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
-		"bar_index": 16
-	},
-	"entity_action": {
-		"type": "origins:and",
-		"actions": [
-			{
-				"type": "origins:add_velocity",
-				"x": 0.0,
-				"y": 0.0,
-				"z": 1.5,
-				"space": "local"
-			},
-			{
-				"type": "origins:play_sound",
-				"sound": "minecraft:entity.dolphin.jump",
-				"volume": 2,
-				"pitch": 1
-			},
-			{
-				"type": "origins:execute_command",
-				"command": "particle minecraft:bubble_column_up ~ ~ ~ 0.6 0.02 0.6 0.1 30"
-			}
-		]
-	},
-	"condition": {
-		"type": "origins:fluid_height",
-		"fluid": "minecraft:water",
-		"comparison": ">",
-		"compare_to": 0.0
-	},
-	"key": {
-		"key": "key.origins.secondary_active",
-		"continuous": true
-	}
+    "type": "origins:active_self",
+    "cooldown": 200,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 16
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "x": 0.0,
+                "y": 0.0,
+                "z": 1.5,
+                "space": "local"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.dolphin.jump",
+                "volume": 2,
+                "pitch": 1
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:bubble_column_up ~ ~ ~ 0.6 0.02 0.6 0.1 30"
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">",
+        "compare_to": 0.0
+    },
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": true
+    }
 }

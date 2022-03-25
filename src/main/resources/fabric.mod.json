@@ -1,42 +1,38 @@
 {
-  "schemaVersion": 1,
-  "id": "grounded_origins",
-  "version": "${mod_version}",
-
-  "name": "Grounded Origins",
-  "description": "An Origins addon that adds the Beach Crab, Deer, Moth, and Penguin origins.",
-  "authors": [
-    "mo_shark/mo_mo",
-    "girlbossremi"
-  ],
-  "contact": {
-    "sources": "https://github.com/Mos-Origins/GroundedOrigins",
-    "issues": "https://github.com/Mos-Origins/GroundedOrigins/issues",
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/grounded-origins"
-  },
-
-  "license": "MIT",
-  "icon": "assets/grounded_origins/icon.png",
-
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "momo.grounded_origins.GroundedOrigins"
+    "schemaVersion": 1,
+    "id": "grounded_origins",
+    "version": "${mod_version}",
+    "name": "Grounded Origins",
+    "description": "An Origins addon that adds the Beach Crab, Deer, Moth, and Penguin origins.",
+    "authors": [
+        "mo_shark/mo_mo",
+        "girlbossremi"
     ],
-    "client": [
-      "momo.grounded_origins.registry.ModKeybinds"
-    ]
-  },
-
-  "depends": {
-    "java": ">=17",
-    "fabricloader": ">=0.13.3",
-    "fabric": ">=0.46.6",
-    "minecraft": "1.18.x",
-    "origins": ">=1.2.0",
-    "pehkui": ">=3.1.0"
-  },
-  "suggests": {
-    "another-mod": "*"
-  }
+    "contact": {
+        "sources": "https://github.com/Mos-Origins/GroundedOrigins",
+        "issues": "https://github.com/Mos-Origins/GroundedOrigins/issues",
+        "homepage": "https://www.curseforge.com/minecraft/mc-mods/grounded-origins"
+    },
+    "license": "MIT",
+    "icon": "assets/grounded_origins/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "momo.grounded_origins.GroundedOrigins"
+        ],
+        "client": [
+            "momo.grounded_origins.registry.ModKeybinds"
+        ]
+    },
+    "depends": {
+        "java": ">=17",
+        "fabricloader": ">=0.13.3",
+        "fabric": ">=0.46.6",
+        "minecraft": "1.18.x",
+        "origins": ">=1.2.0",
+        "pehkui": ">=3.1.0"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
 }
