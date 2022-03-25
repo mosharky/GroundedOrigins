@@ -11,18 +11,19 @@
 
 ### BOTH:
 - Added new foods that can only be crafted with the Moth Origin:
+- ![Spritesheet](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.18.1/.github/assets/ItemsSpritesheet.png?raw=true)
   - **Note**: _This replaces the old system "Fibrous Diet" power system, where you could eat otherwise inedible items like Leather, Paper, Wool, etc_
-  - Flower Stamens
-    - Crafted with 2 Flowers (any block/item with the `minecraft:flowers` tag)
-    - OR
-    - Crafted with 1 Spore Blossom
-    - Applies "Health Boost" effect for 2 minutes
-  - Fibrous String
-    - Crafted with 1 Wool (any block/item with the `minecraft:wool` tag)
-  - Paper Shreds
-    - Crafted with 1 Paper
-  - Book-Bite
-    - Crafted with 1 Book
+    - Flower Stamens
+      - Crafted with 2 Flowers (any block/item with the `minecraft:flowers` tag)
+      - OR
+      - Crafted with 1 Spore Blossom
+      - Applies "Health Boost" effect for 2 minutes
+    - Fibrous String
+      - Crafted with 1 Wool (any block/item with the `minecraft:wool` tag)
+    - Paper Shreds
+      - Crafted with 1 Paper
+    - Book-Bite
+      - Crafted with 1 Book
 - Renamed `grounded_origins:moth/edible` tag to `grounded_origins:moth/fibrous_foods`
 - Removed "Vegetarian" power from Moth origin
 - "Fibrous Diet" Moth power overhaul
