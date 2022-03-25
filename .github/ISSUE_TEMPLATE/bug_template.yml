@@ -29,10 +29,6 @@ body:
     validations:
       required: true
 
-  - type: markdown
-    attributes:
-      value: "## Issue Description"
-
   - type: textarea
     id: description
     attributes:
