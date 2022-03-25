@@ -1,10 +1,12 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {"item": "minecraft:book"}
-  ],
-  "result": {
-    "item": "grounded_origins:book_bite",
-    "count": 2
-  }
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:book"
+        }
+    ],
+    "result": {
+        "item": "grounded_origins:book_bite",
+        "count": 2
+    }
 }

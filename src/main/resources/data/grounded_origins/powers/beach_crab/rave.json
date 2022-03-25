@@ -19,7 +19,6 @@
                 "volume": 0.50
             }
         ]
-
     },
     "cooldown": 24000,
     "hud_render": {

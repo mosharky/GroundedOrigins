@@ -1,40 +1,40 @@
 {
-	"type": "origins:multiple",
-	"mainhand_extra_damage": {
-		"type": "origins:conditioned_attribute",
-		"modifier": {
-			"operation": "addition",
-			"value": 6,
-			"attribute": "minecraft:generic.attack_damage"
-		},
-		"condition": {
-			"inverted": true,
-			"type": "origins:equipped_item",
-			"equipment_slot": "mainhand",
-			"item_condition": {
-				"type": "origins:ingredient",
-				"ingredient": {
-					"tag": "forge:tools"
-				}
-			}
-		}
-	},
-	"weapon_less_damage": {
-		"type": "origins:conditioned_attribute",
-		"modifier": {
-			"attribute": "minecraft:generic.attack_damage",
-			"value": -0.50,
-			"operation": "multiply_total"
-		},
-		"condition": {
-			"type": "origins:equipped_item",
-			"equipment_slot": "mainhand",
-			"item_condition": {
-				"type": "origins:ingredient",
-				"ingredient": {
-					"tag": "forge:tools"
-				}
-			}
-		}
-	}
+    "type": "origins:multiple",
+    "mainhand_extra_damage": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "operation": "addition",
+            "value": 6,
+            "attribute": "minecraft:generic.attack_damage"
+        },
+        "condition": {
+            "inverted": true,
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "forge:tools"
+                }
+            }
+        }
+    },
+    "weapon_less_damage": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_damage",
+            "value": -0.50,
+            "operation": "multiply_total"
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "forge:tools"
+                }
+            }
+        }
+    }
 }

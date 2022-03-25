@@ -1,6 +1,6 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "grounded_origins:item/icons/beach_crab_icon"
-  }
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "grounded_origins:item/icons/beach_crab_icon"
+    }
 }

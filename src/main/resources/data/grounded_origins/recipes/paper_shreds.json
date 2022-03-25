@@ -1,10 +1,12 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {"item": "minecraft:paper"}
-  ],
-  "result": {
-    "item": "grounded_origins:paper_shreds",
-    "count": 2
-  }
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:paper"
+        }
+    ],
+    "result": {
+        "item": "grounded_origins:paper_shreds",
+        "count": 2
+    }
 }
