@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "#minecraft:ice",
-        "#minecraft:sand",
-        "snow",
-        "snow_block"
-    ]
-}
