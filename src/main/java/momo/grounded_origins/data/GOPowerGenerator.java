@@ -87,8 +87,7 @@ public class GOPowerGenerator extends PowerGenerator {
 		builder.put("bonemeal", ApoliPowers.ACTIVE_SELF.get().configure(
 				new ActiveSelfConfiguration(50, new HudRender(true, 2, new ResourceLocation(GroundedOrigins.MOD_ID, "textures/gui/custom_bars.png"), null, false), bonemeal, IActivePower.Key.SECONDARY),
 				PowerData.builder()
-						.addCondition(ApoliEntityConditions.EXPOSED_TO_SUN.get().configure(NoConfiguration.INSTANCE, new ConditionData(true)))
-						.addCondition(flowers)
+						.addCondition(ApoliEntityConditions.and(ApoliEntityConditions.EXPOSED_TO_SUN.get().configure(NoConfiguration.INSTANCE, new ConditionData(true)), flowers))
 						.build()));
 		builder.put("flower_forest_strength", ApoliPowers.STACKING_STATUS_EFFECT.get().configure(
 				new StackingStatusEffectConfiguration(ListConfiguration.of(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100, 2, true, false, false)), -30, 120, 10, 10),
@@ -102,8 +101,11 @@ public class GOPowerGenerator extends PowerGenerator {
 		return ApoliPowers.STACKING_STATUS_EFFECT.get().configure(
 				new StackingStatusEffectConfiguration(ListConfiguration.of(effects), -30, 120, 10, 10),
 				PowerData.builder()
-						.addCondition(ApoliEntityConditions.EXPOSED_TO_SUN.get().configure(NoConfiguration.INSTANCE, new ConditionData(true)))
-						.addCondition(ModEntityConditions.CUBE_CHECK.get().configure(new CubeCheckConditionConfiguration(new ResourceLocation(GroundedOrigins.MOD_ID, "moth/block_lookup"), name, 15)))
+						.addCondition(
+								ApoliEntityConditions.and(
+										ApoliEntityConditions.EXPOSED_TO_SUN.get().configure(NoConfiguration.INSTANCE, new ConditionData(true)),
+										ModEntityConditions.CUBE_CHECK.get().configure(new CubeCheckConditionConfiguration(new ResourceLocation(GroundedOrigins.MOD_ID, "moth/block_lookup"), name, 15))
+								))
 						.build());
 	}
 }

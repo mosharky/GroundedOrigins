@@ -1,24 +1,15 @@
 package momo.grounded_origins.configuration;
 
-import com.google.common.collect.ImmutableSet;
-import io.github.apace100.origins.Origins;
 import io.github.edwinmindcraft.apoli.api.component.IPowerContainer;
 import momo.grounded_origins.registry.ModPowers;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Vec3i;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.CauldronBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class CubeCheckCache {
 	public static void invalidate(Entity entity, BlockPos pos) {
@@ -72,7 +63,6 @@ public class CubeCheckCache {
 		this.uZ = zEnd;
 		for (Set<BlockPos> set : this.currentCache)
 			set.removeIf(this::isOutside);
-		Origins.LOGGER.info("Cube Check Cache update status: {}", IntStream.range(0, this.currentCache.length).mapToObj(x -> this.config.entries().get(x).name() + ": " + this.currentCache[x].size()).collect(Collectors.joining(",")));
 	}
 
 	private boolean isOutside(BlockPos pos) {

@@ -1,11 +1,9 @@
 package momo.grounded_origins.registry;
 
 import io.github.edwinmindcraft.apoli.api.power.factory.EntityCondition;
-import io.github.edwinmindcraft.apoli.api.power.factory.PowerFactory;
 import io.github.edwinmindcraft.apoli.api.registry.ApoliRegistries;
 import momo.grounded_origins.GroundedOrigins;
 import momo.grounded_origins.power.CubeCheckConditionForge;
-import momo.grounded_origins.power.CubeCheckPowerForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;

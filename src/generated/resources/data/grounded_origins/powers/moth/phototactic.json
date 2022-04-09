@@ -11,18 +11,21 @@
       "show_icon": false
     },
     "min_stacks": -30,
-    "conditions": [
-      {
-        "inverted": true,
-        "type": "apoli:exposed_to_sun"
-      },
-      {
-        "name": "lanterns",
-        "range": 15,
-        "power": "grounded_origins:moth/block_lookup",
-        "type": "grounded_origins:cube_check"
-      }
-    ],
+    "condition": {
+      "conditions": [
+        {
+          "inverted": true,
+          "type": "apoli:exposed_to_sun"
+        },
+        {
+          "name": "lanterns",
+          "range": 15,
+          "power": "grounded_origins:moth/block_lookup",
+          "type": "grounded_origins:cube_check"
+        }
+      ],
+      "type": "apoli:and"
+    },
     "type": "apoli:stacking_status_effect"
   },
   "glowstones_buff": {
@@ -37,18 +40,21 @@
       "show_icon": false
     },
     "min_stacks": -30,
-    "conditions": [
-      {
-        "inverted": true,
-        "type": "apoli:exposed_to_sun"
-      },
-      {
-        "name": "glowstone_lights",
-        "range": 15,
-        "power": "grounded_origins:moth/block_lookup",
-        "type": "grounded_origins:cube_check"
-      }
-    ],
+    "condition": {
+      "conditions": [
+        {
+          "inverted": true,
+          "type": "apoli:exposed_to_sun"
+        },
+        {
+          "name": "glowstone_lights",
+          "range": 15,
+          "power": "grounded_origins:moth/block_lookup",
+          "type": "grounded_origins:cube_check"
+        }
+      ],
+      "type": "apoli:and"
+    },
     "type": "apoli:stacking_status_effect"
   },
   "pumpkins_buff": {
@@ -63,18 +69,21 @@
       "show_icon": false
     },
     "min_stacks": -30,
-    "conditions": [
-      {
-        "inverted": true,
-        "type": "apoli:exposed_to_sun"
-      },
-      {
-        "name": "pumpkin_lights",
-        "range": 15,
-        "power": "grounded_origins:moth/block_lookup",
-        "type": "grounded_origins:cube_check"
-      }
-    ],
+    "condition": {
+      "conditions": [
+        {
+          "inverted": true,
+          "type": "apoli:exposed_to_sun"
+        },
+        {
+          "name": "pumpkin_lights",
+          "range": 15,
+          "power": "grounded_origins:moth/block_lookup",
+          "type": "grounded_origins:cube_check"
+        }
+      ],
+      "type": "apoli:and"
+    },
     "type": "apoli:stacking_status_effect"
   },
   "souls_buff": {
@@ -89,18 +98,21 @@
       "show_icon": false
     },
     "min_stacks": -30,
-    "conditions": [
-      {
-        "inverted": true,
-        "type": "apoli:exposed_to_sun"
-      },
-      {
-        "name": "soul_lights",
-        "range": 15,
-        "power": "grounded_origins:moth/block_lookup",
-        "type": "grounded_origins:cube_check"
-      }
-    ],
+    "condition": {
+      "conditions": [
+        {
+          "inverted": true,
+          "type": "apoli:exposed_to_sun"
+        },
+        {
+          "name": "soul_lights",
+          "range": 15,
+          "power": "grounded_origins:moth/block_lookup",
+          "type": "grounded_origins:cube_check"
+        }
+      ],
+      "type": "apoli:and"
+    },
     "type": "apoli:stacking_status_effect"
   },
   "sea_buff": {
@@ -115,18 +127,21 @@
       "show_icon": false
     },
     "min_stacks": -30,
-    "conditions": [
-      {
-        "inverted": true,
-        "type": "apoli:exposed_to_sun"
-      },
-      {
-        "name": "sea_lights",
-        "range": 15,
-        "power": "grounded_origins:moth/block_lookup",
-        "type": "grounded_origins:cube_check"
-      }
-    ],
+    "condition": {
+      "conditions": [
+        {
+          "inverted": true,
+          "type": "apoli:exposed_to_sun"
+        },
+        {
+          "name": "sea_lights",
+          "range": 15,
+          "power": "grounded_origins:moth/block_lookup",
+          "type": "grounded_origins:cube_check"
+        }
+      ],
+      "type": "apoli:and"
+    },
     "type": "apoli:stacking_status_effect"
   },
   "type": "apoli:multiple"

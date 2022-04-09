@@ -11,7 +11,8 @@ import net.minecraft.world.level.block.Block;
 
 import java.util.List;
 
-public record CubeCheckConfiguration(int radius, List<Entry> entries, int tickInterval) implements IDynamicFeatureConfiguration {
+public record CubeCheckConfiguration(int radius, List<Entry> entries,
+									 int tickInterval) implements IDynamicFeatureConfiguration {
 	public record Entry(String name, Tag<Block> tag, Comparison comparison, int compareTo) {}
 
 	public static final SerializableDataType<Entry> ENTRY = SerializableDataType.compound(Entry.class, new SerializableData()

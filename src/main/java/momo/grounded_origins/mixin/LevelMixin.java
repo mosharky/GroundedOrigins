@@ -18,8 +18,8 @@ public abstract class LevelMixin {
 	@Shadow
 	protected abstract LevelEntityGetter<Entity> getEntities();
 
-	@Inject(method = "setBlock(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z", at = @At("RETURN"))
-	public void invalidateCaches(BlockPos pPos, BlockState pNewState, int pFlags, CallbackInfoReturnable<Boolean> cir) {
+	@Inject(method = "setBlock(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;II)Z", at = @At("RETURN"))
+	public void invalidateCaches(BlockPos pPos, BlockState pNewState, int pFlags, int maxDepth, CallbackInfoReturnable<Boolean> cir) {
 		if (cir.getReturnValueZ()) {
 			for (Entity entity : this.getEntities().getAll())
 				CubeCheckCache.invalidate(entity, pPos);
