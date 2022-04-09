@@ -1,4 +1,27 @@
 [CHANGELOG](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.18.1/.github/CHANGELOG.md)
+# **[1.1.1] - 2022/04/22**
+
+### FABRIC:
+- Refactored `c:tools` item tag to `fabric:tools`
+
+### FORGE:
+- **Temporarily disabled the Moth origin's "Pollinator" and "Phototactic" powers.** The two powers cause an insane amount of lag that isn't present on Fabric or the 1.16.5 Forge port of the Origins mod. The Forge port dev told me that he'll try working on a solution, but there are no promises
+  - Until the issue is fixed in the Forge port of Origins, these two powers will remain disabled. If that takes too long, I'll try to replace those powers with something new.
+  - For now, I wouldn't recommend picking the Moth Origin until this is fixed.
+
+### BOTH:
+- Removed unused `grounded_origins:penguin/happy_blocks` tag
+- Fixed regen effect not applying properly with Deer's "Forest Native" power
+- Pollinator > Pollenator lol
+- Forest Native now applies its effects for 10 seconds, up from 5
+- Changed Deer's "Springed Step" and "Hooved Grace" power descriptions to be more accurate:
+  - **Springed Step:** _"Your natural elasticity allows for a higher jump while galloping."_
+  - **Hooved Grace:** _"Your hooves absorb half the trauma of any fall."_
+
+
+***
+
+
 # **[1.1.0] - 2022/03/24**
 
 ### FABRIC:
