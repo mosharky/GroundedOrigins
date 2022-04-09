@@ -24,6 +24,9 @@
             "momo.grounded_origins.registry.ModKeybinds"
         ]
     },
+    "mixins": [
+        "groundedorigins.mixins.json"
+    ],
     "depends": {
         "java": ">=17",
         "fabricloader": ">=0.13.3",
