@@ -1,0 +1,133 @@
+{
+  "lanterns_buff": {
+    "max_stacks": 120,
+    "duration_per_stack": 10,
+    "effect": {
+      "effect": "minecraft:regeneration",
+      "duration": 100,
+      "amplifier": 0,
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+    },
+    "min_stacks": -30,
+    "conditions": [
+      {
+        "inverted": true,
+        "type": "apoli:exposed_to_sun"
+      },
+      {
+        "name": "lanterns",
+        "range": 15,
+        "power": "grounded_origins:moth/block_lookup",
+        "type": "grounded_origins:cube_check"
+      }
+    ],
+    "type": "apoli:stacking_status_effect"
+  },
+  "glowstones_buff": {
+    "max_stacks": 120,
+    "duration_per_stack": 10,
+    "effect": {
+      "effect": "minecraft:slow_falling",
+      "duration": 100,
+      "amplifier": 0,
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+    },
+    "min_stacks": -30,
+    "conditions": [
+      {
+        "inverted": true,
+        "type": "apoli:exposed_to_sun"
+      },
+      {
+        "name": "glowstone_lights",
+        "range": 15,
+        "power": "grounded_origins:moth/block_lookup",
+        "type": "grounded_origins:cube_check"
+      }
+    ],
+    "type": "apoli:stacking_status_effect"
+  },
+  "pumpkins_buff": {
+    "max_stacks": 120,
+    "duration_per_stack": 10,
+    "effect": {
+      "effect": "minecraft:resistance",
+      "duration": 100,
+      "amplifier": 0,
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+    },
+    "min_stacks": -30,
+    "conditions": [
+      {
+        "inverted": true,
+        "type": "apoli:exposed_to_sun"
+      },
+      {
+        "name": "pumpkin_lights",
+        "range": 15,
+        "power": "grounded_origins:moth/block_lookup",
+        "type": "grounded_origins:cube_check"
+      }
+    ],
+    "type": "apoli:stacking_status_effect"
+  },
+  "souls_buff": {
+    "max_stacks": 120,
+    "duration_per_stack": 10,
+    "effect": {
+      "effect": "minecraft:haste",
+      "duration": 100,
+      "amplifier": 0,
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+    },
+    "min_stacks": -30,
+    "conditions": [
+      {
+        "inverted": true,
+        "type": "apoli:exposed_to_sun"
+      },
+      {
+        "name": "soul_lights",
+        "range": 15,
+        "power": "grounded_origins:moth/block_lookup",
+        "type": "grounded_origins:cube_check"
+      }
+    ],
+    "type": "apoli:stacking_status_effect"
+  },
+  "sea_buff": {
+    "max_stacks": 120,
+    "duration_per_stack": 10,
+    "effect": {
+      "effect": "minecraft:dolphins_grace",
+      "duration": 100,
+      "amplifier": 0,
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+    },
+    "min_stacks": -30,
+    "conditions": [
+      {
+        "inverted": true,
+        "type": "apoli:exposed_to_sun"
+      },
+      {
+        "name": "sea_lights",
+        "range": 15,
+        "power": "grounded_origins:moth/block_lookup",
+        "type": "grounded_origins:cube_check"
+      }
+    ],
+    "type": "apoli:stacking_status_effect"
+  },
+  "type": "apoli:multiple"
+}

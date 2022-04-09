@@ -1,0 +1,104 @@
+{
+  "resistance": {
+    "max_stacks": 120,
+    "duration_per_stack": 10,
+    "effect": {
+      "effect": "minecraft:resistance",
+      "duration": 100,
+      "amplifier": 2,
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+    },
+    "min_stacks": -30,
+    "condition": {
+      "conditions": [
+        {
+          "name": "flowers",
+          "range": -1,
+          "power": "grounded_origins:moth/block_lookup",
+          "type": "grounded_origins:cube_check"
+        },
+        {
+          "name": "spore_blossom",
+          "range": -1,
+          "power": "grounded_origins:moth/block_lookup",
+          "type": "grounded_origins:cube_check"
+        }
+      ],
+      "type": "apoli:or"
+    },
+    "type": "apoli:stacking_status_effect"
+  },
+  "bonemeal": {
+    "cooldown": 50,
+    "hud_render": {
+      "sprite_location": "grounded_origins:textures/gui/custom_bars.png",
+      "bar_index": 2
+    },
+    "entity_action": {
+      "block_action": {
+        "actions": [
+          {
+            "action": {
+              "type": "apoli:bonemeal"
+            },
+            "y": -1,
+            "type": "apoli:offset"
+          },
+          {
+            "type": "apoli:bonemeal"
+          }
+        ],
+        "type": "apoli:and"
+      },
+      "type": "apoli:block_action_at"
+    },
+    "key": {
+      "key": "key.origins.secondary_active"
+    },
+    "conditions": [
+      {
+        "inverted": true,
+        "type": "apoli:exposed_to_sun"
+      },
+      {
+        "conditions": [
+          {
+            "name": "flowers",
+            "range": -1,
+            "power": "grounded_origins:moth/block_lookup",
+            "type": "grounded_origins:cube_check"
+          },
+          {
+            "name": "spore_blossom",
+            "range": -1,
+            "power": "grounded_origins:moth/block_lookup",
+            "type": "grounded_origins:cube_check"
+          }
+        ],
+        "type": "apoli:or"
+      }
+    ],
+    "type": "apoli:active_self"
+  },
+  "flower_forest_strength": {
+    "max_stacks": 120,
+    "duration_per_stack": 10,
+    "effect": {
+      "effect": "minecraft:strength",
+      "duration": 100,
+      "amplifier": 2,
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+    },
+    "min_stacks": -30,
+    "condition": {
+      "biome": "minecraft:flower_forest",
+      "type": "apoli:biome"
+    },
+    "type": "apoli:stacking_status_effect"
+  },
+  "type": "apoli:multiple"
+}
