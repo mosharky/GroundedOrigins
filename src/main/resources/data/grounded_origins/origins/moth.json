@@ -10,8 +10,7 @@
         "grounded_origins:moth/water_vulnerability",
         "grounded_origins:moth/flammable",
         "grounded_origins:moth/phototactic",
-        "grounded_origins:moth/nocturnal",
-        "grounded_origins:moth/block_lookup"
+        "grounded_origins:moth/nocturnal"
     ],
     "icon": "grounded_origins:moth_icon",
     "order": 5,
