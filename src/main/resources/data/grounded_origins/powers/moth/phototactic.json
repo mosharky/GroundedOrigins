@@ -1,0 +1,138 @@
+{
+    "type": "origins:multiple",
+    "lanterns_buff": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 20,
+        "effect": {
+            "effect": "minecraft:regeneration",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:exposed_to_sun"
+                },
+                {
+                    "type": "grounded_origins:cube_check",
+                    "power": "grounded_origins:moth/block_lookup",
+                    "name": "lanterns",
+                    "range": 15
+                }
+            ]
+        }
+    },
+    "glowstones_buff": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 20,
+        "effect": {
+            "effect": "minecraft:slow_falling",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:exposed_to_sun"
+                },
+                {
+                    "type": "grounded_origins:cube_check",
+                    "power": "grounded_origins:moth/block_lookup",
+                    "name": "glowstone_lights",
+                    "range": 15
+                }
+            ]
+        }
+    },
+    "pumpkins_buff": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 20,
+        "effect": {
+            "effect": "minecraft:resistance",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:exposed_to_sun"
+                },
+                {
+                    "type": "grounded_origins:cube_check",
+                    "power": "grounded_origins:moth/block_lookup",
+                    "name": "pumpkin_lights",
+                    "range": 15
+                }
+            ]
+        }
+    },
+    "souls_buff": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 20,
+        "effect": {
+            "effect": "minecraft:haste",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:exposed_to_sun"
+                },
+                {
+                    "type": "grounded_origins:cube_check",
+                    "power": "grounded_origins:moth/block_lookup",
+                    "name": "soul_lights",
+                    "range": 15
+                }
+            ]
+        }
+    },
+    "sea_buff": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 20,
+        "effect": {
+            "effect": "minecraft:dolphins_grace",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:exposed_to_sun"
+                },
+                {
+                    "type": "grounded_origins:cube_check",
+                    "power": "grounded_origins:moth/block_lookup",
+                    "name": "sea_lights",
+                    "range": 15
+                }
+            ]
+        }
+    }
+}

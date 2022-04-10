@@ -1,0 +1,105 @@
+{
+    "type": "origins:multiple",
+    "flower_forest_strength": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 20,
+        "effect": {
+            "effect": "minecraft:strength",
+            "amplifier": 1,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "biome": "minecraft:flower_forest",
+            "type": "origins:biome"
+        }
+    },
+    "resistance": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 20,
+        "effect": {
+            "effect": "minecraft:resistance",
+            "amplifier": 2,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "name": "flowers",
+                    "power": "grounded_origins:moth/block_lookup",
+                    "type": "grounded_origins:cube_check",
+                    "range": -1
+                },
+                {
+                    "name": "spore_blossom",
+                    "power": "grounded_origins:moth/block_lookup",
+                    "type": "grounded_origins:cube_check",
+                    "range": -1
+                }
+            ]
+        }
+    },
+    "bonemeal": {
+        "type": "origins:active_self",
+        "cooldown": 50,
+        "hud_render": {
+            "sprite_location": "grounded_origins:textures/gui/custom_bars.png",
+            "bar_index": 2
+        },
+        "entity_action": {
+            "type": "origins:block_action_at",
+            "block_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "action": {
+                            "type": "origins:bonemeal"
+                        },
+                        "y": -1,
+                        "type": "origins:offset"
+                    },
+                    {
+                        "type": "origins:bonemeal"
+                    }
+                ]
+            }
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:exposed_to_sun"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "name": "flowers",
+                            "range": -1,
+                            "power": "grounded_origins:moth/block_lookup",
+                            "type": "grounded_origins:cube_check"
+                        },
+                        {
+                            "name": "spore_blossom",
+                            "range": -1,
+                            "power": "grounded_origins:moth/block_lookup",
+                            "type": "grounded_origins:cube_check"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
