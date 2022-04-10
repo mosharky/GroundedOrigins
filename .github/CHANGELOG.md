@@ -1,5 +1,21 @@
 [CHANGELOG](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.18.1/.github/CHANGELOG.md)
-# **[1.1.1] - 2022/04/22**
+# **[1.1.2] - 2022/04/10**
+
+### FORGE:
+- The Moth origin's Pollinator and Phototactic powers are back, the FPS issue has been fixed!
+
+All thanks to [EdwinMindcraft](https://www.curseforge.com/members/edwinmindcraft/projects) for creating the new `grounded_origins:cube_check` power and entity condition in [this pull request](https://github.com/Mos-Origins/GroundedOrigins/pull/4)! You can find documentation on this [here](https://github.com/Mos-Origins/GroundedOrigins/wiki/Power-types-&-Conditions-Documentation)
+
+### BOTH:
+- Added Russian localization ([thanks to _vanja-san_!](https://github.com/Mos-Origins/GroundedOrigins/pull/3/commits/710a304c0e976ff78e07fa48a5654644fe33116e))
+- The Moth origin's Pollinator and Phototactic buffs can stack up to 2 minutes, up from 1 minute 
+- The Moth origin's Flower Forest strength buff from Pollinator is no longer amplified; it's just Strength I now
+
+
+***
+
+
+# **[1.1.1] - 2022/04/09**
 
 ### FABRIC:
 - Refactored `c:tools` item tag to `fabric:tools`
