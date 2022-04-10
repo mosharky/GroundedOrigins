@@ -9,8 +9,7 @@
             "effect": "minecraft:strength",
             "is_ambient": true,
             "show_particles": false,
-            "show_icon": false,
-            "amplifier": 0
+            "show_icon": false
         },
         "condition": {
             "type": "origins:biome",
