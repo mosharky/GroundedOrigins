@@ -1,6 +1,7 @@
 package momo.grounded_origins.configuration;
 
 import io.github.apace100.apoli.component.PowerHolderComponent;
+import io.github.apace100.origins.Origins;
 import momo.grounded_origins.power.CubeCheckPowerFabric;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -10,6 +11,8 @@ import net.minecraft.world.World;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class CubeCheckCache {
 	public static void invalidate(Entity entity, BlockPos pos) {
@@ -63,6 +66,7 @@ public class CubeCheckCache {
 		this.uZ = zEnd;
 		for (Set<BlockPos> set : this.currentCache)
 			set.removeIf(this::isOutside);
+		Origins.LOGGER.info("Cube Check Cache update status: {}", IntStream.range(0, this.currentCache.length).mapToObj(x -> this.config.entries().get(x).name() + ": " + this.currentCache[x].size()).collect(Collectors.joining(",")));
 	}
 
 	private boolean isOutside(BlockPos pos) {
