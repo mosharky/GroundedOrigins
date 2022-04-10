@@ -1,10 +1,27 @@
 {
     "type": "origins:multiple",
+    "flower_forest_strength": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -30,
+        "max_stacks": 120,
+        "duration_per_stack": 20,
+        "effect": {
+            "effect": "minecraft:strength",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false,
+            "amplifier": 0
+        },
+        "condition": {
+            "type": "origins:biome",
+            "biome": "minecraft:flower_forest"
+        }
+    },
     "resistance": {
         "type": "origins:stacking_status_effect",
         "min_stacks": -30,
         "max_stacks": 120,
-        "duration_per_stack": 10,
+        "duration_per_stack": 20,
         "effects": {
             "effect": "minecraft:resistance",
             "is_ambient": true,
@@ -111,23 +128,6 @@
                     "type": "origins:exposed_to_sun"
                 }
             ]
-        }
-    },
-    "flower_forest_strength": {
-        "type": "origins:stacking_status_effect",
-        "min_stacks": 0,
-        "max_stacks": 300,
-        "duration_per_stack": 10,
-        "effect": {
-            "effect": "minecraft:strength",
-            "is_ambient": true,
-            "show_particles": false,
-            "show_icon": false,
-            "amplifier": 0
-        },
-        "condition": {
-            "type": "origins:biome",
-            "biome": "minecraft:flower_forest"
         }
     }
 }

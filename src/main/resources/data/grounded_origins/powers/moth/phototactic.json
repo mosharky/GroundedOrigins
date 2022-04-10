@@ -4,7 +4,7 @@
         "type": "origins:stacking_status_effect",
         "min_stacks": -30,
         "max_stacks": 120,
-        "duration_per_stack": 10,
+        "duration_per_stack": 20,
         "effects": {
             "effect": "minecraft:regeneration",
             "is_ambient": true,
@@ -34,7 +34,7 @@
         "type": "origins:stacking_status_effect",
         "min_stacks": -30,
         "max_stacks": 120,
-        "duration_per_stack": 10,
+        "duration_per_stack": 20,
         "effects": {
             "effect": "minecraft:slow_falling",
             "is_ambient": true,
@@ -64,7 +64,7 @@
         "type": "origins:stacking_status_effect",
         "min_stacks": -30,
         "max_stacks": 120,
-        "duration_per_stack": 10,
+        "duration_per_stack": 20,
         "effect": {
             "effect": "minecraft:resistance",
             "is_ambient": true,
@@ -94,7 +94,7 @@
         "type": "origins:stacking_status_effect",
         "min_stacks": -30,
         "max_stacks": 120,
-        "duration_per_stack": 10,
+        "duration_per_stack": 20,
         "effect": {
             "effect": "minecraft:haste",
             "is_ambient": true,
@@ -124,7 +124,7 @@
         "type": "origins:stacking_status_effect",
         "min_stacks": -30,
         "max_stacks": 120,
-        "duration_per_stack": 10,
+        "duration_per_stack": 20,
         "effect": {
             "effect": "minecraft:dolphins_grace",
             "is_ambient": true,
