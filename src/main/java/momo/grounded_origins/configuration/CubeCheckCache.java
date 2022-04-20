@@ -83,7 +83,7 @@ public class CubeCheckCache {
 	private void applyChecks(BlockState state, BlockPos pos) {
 		for (int i = 0; i < this.config.entries().size(); i++) {
 			CubeCheckConfiguration.Entry entry = this.config.entries().get(i);
-			if (state.m_60620_(entry.tag()))
+			if (state.is(entry.tag()))
 				this.currentCache[i].add(pos.immutable());
 			else
 				this.currentCache[i].remove(pos.immutable());

@@ -109,9 +109,9 @@ aka 'curse.maven:descriptor-projectid:fileid'
 */
 dependencies {
     minecraft group: 'net.minecraftforge', name: 'forge', version: "${minecraft_version}-${forge_version}"
-    runtimeOnly fg.deobf('curse.maven:pehkui-319596:3708689')
+    runtimeOnly fg.deobf('curse.maven:pehkui-319596:3708694')
     runtimeOnly fg.deobf('curse.maven:caelus-308989:3650485')
-    implementation fg.deobf("curse.maven:origins-474438:3724259")
+    implementation fg.deobf("curse.maven:origins-474438:3747134")
     //Added mixin support
     implementation group: 'org.spongepowered', name: 'mixin', version: "${mixin_version}"
     annotationProcessor "org.spongepowered:mixin:${mixin_version}:processor"
