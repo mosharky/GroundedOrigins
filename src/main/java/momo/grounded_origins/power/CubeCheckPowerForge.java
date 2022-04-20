@@ -1,7 +1,9 @@
 package momo.grounded_origins.power;
 
+import io.github.apace100.origins.Origins;
 import io.github.edwinmindcraft.apoli.api.power.configuration.ConfiguredPower;
 import io.github.edwinmindcraft.apoli.api.power.factory.PowerFactory;
+import io.github.edwinmindcraft.calio.common.CalioConfig;
 import momo.grounded_origins.configuration.CubeCheckCache;
 import momo.grounded_origins.configuration.CubeCheckConfiguration;
 import net.minecraft.core.BlockPos;
@@ -27,6 +29,8 @@ public class CubeCheckPowerForge extends PowerFactory<CubeCheckConfiguration> {
 	@Override
 	public void tick(@NotNull ConfiguredPower<CubeCheckConfiguration, ?> configuration, @NotNull Entity entity) {
 		this.getCache(configuration, entity).updateCache(entity.getLevel(), entity.blockPosition());
+		if (CalioConfig.COMMON.logging.get())
+			Origins.LOGGER.info(this.getCache(configuration, entity));
 	}
 
 	public void invalidate(@NotNull ConfiguredPower<CubeCheckConfiguration, ?> configuration, @NotNull Entity entity, BlockPos pos) {

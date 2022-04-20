@@ -7,9 +7,9 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
-import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class CubeCheckCache {
 	public static void invalidate(Entity entity, BlockPos pos) {
@@ -24,13 +24,14 @@ public class CubeCheckCache {
 	private int uX;
 	private int uY;
 	private int uZ;
-	private final Set<BlockPos> dirty = new HashSet<>();
+	private final Set<BlockPos> dirty = ConcurrentHashMap.newKeySet();
 
+	@SuppressWarnings("unchecked")
 	public CubeCheckCache(CubeCheckConfiguration config) {
 		this.config = config;
 		this.currentCache = new Set[this.config.entries().size()];
 		for (int i = 0; i < this.currentCache.length; i++)
-			this.currentCache[i] = new HashSet<>();
+			this.currentCache[i] = ConcurrentHashMap.newKeySet();
 	}
 
 	public void updateCache(Level level, BlockPos root) {
@@ -91,7 +92,8 @@ public class CubeCheckCache {
 	}
 
 	public void invalidate(BlockPos pos) {
-		this.dirty.add(pos.immutable());
+		if (this.isWithin(pos, this.config.radius()))
+			this.dirty.add(pos.immutable());
 	}
 
 	public boolean check(String name, int range) {
@@ -116,5 +118,16 @@ public class CubeCheckCache {
 			return entry.comparison().compare(this.currentCache[index].size(), entry.compareTo());
 		int count = (int) this.currentCache[index].stream().filter(x -> this.isWithin(x, range)).count();
 		return entry.comparison().compare(count, entry.compareTo());
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		for (int i = 0; i < this.config.entries().size(); i++) {
+			if (!builder.isEmpty())
+				builder.append(',');
+			builder.append(this.config.entries().get(i).name()).append(':').append(this.currentCache[i].size());
+		}
+		return "CubeCheckCache:[%s]".formatted(builder.toString());
 	}
 }
