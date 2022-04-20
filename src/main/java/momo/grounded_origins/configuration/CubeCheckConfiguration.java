@@ -6,7 +6,6 @@ import io.github.apace100.calio.data.SerializableData;
 import io.github.apace100.calio.data.SerializableDataType;
 import io.github.apace100.calio.data.SerializableDataTypes;
 import io.github.edwinmindcraft.apoli.api.IDynamicFeatureConfiguration;
-import net.minecraft.tags.Tag;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 
@@ -14,7 +13,7 @@ import java.util.List;
 
 public record CubeCheckConfiguration(int radius, List<Entry> entries,
 									 int tickInterval) implements IDynamicFeatureConfiguration {
-	public record Entry(String name, TagKey tag, Comparison comparison, int compareTo) {}
+	public record Entry(String name, TagKey<Block> tag, Comparison comparison, int compareTo) {}
 
 	public static final SerializableDataType<Entry> ENTRY = SerializableDataType.compound(Entry.class, new SerializableData()
 					.add("name", SerializableDataTypes.STRING)
