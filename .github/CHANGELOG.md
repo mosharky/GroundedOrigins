@@ -2,7 +2,7 @@
 # **[1.1.3] - 2022/04/20**
 
 ### FORGE:
-- Internal changes to `cube_check`
+- Internal changes to `cube_check` (thanks to [EdwinMindcraft](https://www.curseforge.com/members/edwinmindcraft/projects) for [this pull request](https://github.com/Mos-Origins/GroundedOrigins/pull/6))
 
 ### BOTH:
 - Updated to 1.18.2
