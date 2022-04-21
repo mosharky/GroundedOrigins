@@ -1,4 +1,14 @@
 [CHANGELOG](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.18.1/.github/CHANGELOG.md)
+# **[1.1.3] - 2022/04/20**
+
+### FORGE:
+- Internal changes to `cube_check`
+
+### BOTH:
+- Updated to 1.18.2
+- Updated dependencies
+- Changed `penguin/webbed_feet` and `moth/water_vulnerability` to use the `additionalentityattributes:water_speed` instead of the `modify_swim_speed` power-type
+
 # **[1.1.2] - 2022/04/10**
 
 ### FORGE:
