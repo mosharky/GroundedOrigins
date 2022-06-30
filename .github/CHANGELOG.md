@@ -1,17 +1,22 @@
-[CHANGELOG](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.18/.github/CHANGELOG.md)
+[A MORE READABLE CHANGELOG HERE](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.18/.github/CHANGELOG.md)
 # **[1.2.0] - 2022/06/30**
-If you want any changes, now would be a good time to let me know! Submit a suggestion in the issues section of the github repo. I might create custom status bar textures for each origin too!
+If you want any changes, now would be a good time to let me know! Submit a suggestion in the issues section of the github repo. I might create custom status bar textures for each origin too! Also, sorry Forge folks.
+
+1.19 coming soon :)
 
 ### BOTH:
+- #### Beach Crab refresh!
+  - The Weakness effect from **Home!** for not being in a beach biome now applies after 15 minutes, up from 1 minute
+  - Changed **Home!** description: _"Beach biomes provide you with immense strength and fortification. You feel weaker outside of beach biomes if you stay in them for over 15 minutes."_
+
+### FABRIC:
 - [Apugli](https://www.curseforge.com/minecraft/mc-mods/apugli) by MerchantPug has been added as a library to Grounded Origins to help with the new changes! (No extra download needed)
 - #### Beach Crab refresh!
+  - **Crustacean Gills** now applies Respiration 4, instead of relying on a cruddy implementation of "more oxygen" using the Waterbreathing effect, all thanks to Apugli! This can apply on top of a Respiration 3 helmet too!
   - Replaced **Seagrass Appetite** with **Kelpomaniac**:
     - Crabs can now eat Kelp! Except, properly this time.
     - It gives 3 hunger and the Conduit Power effect for 1 minute
-    - New description: __
-  - The Weakness effect from **Home!** for not being in a beach biome now applies after 15 minutes, up from 1 minute
-  - Changed **Home!** description: _Beach biomes provide you with immense strength and fortification. You feel weaker outside of beach biomes if you stay in them for over 15 minutes._
-  - **Crustacean Gills** now applies Respiration 4, instead of relying on a cruddy implementation of "more oxygen" using the Waterbreathing effect, all thanks to Apugli! This can apply on top of a Respiration 3 helmet too!
+    - New description: _"You can eat Kelp, and it empowers your underwater vision."_
 - #### Moth food changes!
   - Removed the following food items completely:
     - Fibrous String
@@ -25,7 +30,16 @@ If you want any changes, now would be a good time to let me know! Submit a sugge
     - New description: _"You can only eat bits of leather, paper, books, string, and other fibrous foods. You can craft one piece of string with a block of wool."_
   - The above foods have been added to `grounded_origins:moth/fibrous_foods`
   - Flower Stamens have remained the same
-  - Changed **Nectar Production** description: _You can drink nectar by consuming Flower Stamens. Nectar is highly nutritious and boosts your health. You can craft Flower Stamens with two flowers._
+  - Changed **Nectar Production** description: _"You can drink nectar by consuming Flower Stamens. Nectar is highly nutritious and boosts your health. You can craft Flower Stamens with two flowers."_
+
+### FORGE:
+The Forge port will likely not recieve many improvements in the future aside from ports to newer versions due to the lack of Apugli on Forge. Unless that changes, I'll only be adding changes that'll work without Apugli.
+
+- Removed **Seagrass Appetite** power from Beach Crab due to its poor implementation without Apugli.
+
+
+***
+
 
 # **[1.1.3] - 2022/04/20**
 
@@ -36,6 +50,10 @@ If you want any changes, now would be a good time to let me know! Submit a sugge
 - Updated to 1.18.2
 - Updated dependencies
 - Changed `penguin/webbed_feet` and `moth/water_vulnerability` to use the `additionalentityattributes:water_speed` instead of the `modify_swim_speed` power-type
+
+
+***
+
 
 # **[1.1.2] - 2022/04/10**
 
