@@ -1,19 +1,11 @@
 {
     "type": "origins:multiple",
     "oxygen": {
-        "type": "origins:stacking_status_effect",
-        "min_stacks": 1,
-        "max_stacks": 1,
-        "duration_per_stack": 10,
-        "effect": {
-            "effect": "minecraft:water_breathing",
-            "amplifier": 0,
-            "show_particles": false,
-            "show_icon": false
-        },
-        "condition": {
-            "type": "origins:submerged_in",
-            "fluid": "minecraft:water"
+        "type": "apugli:modify_enchantment_level",
+        "enchantment": "minecraft:respiration",
+        "modifiers": {
+            "operation": "addition",
+            "value": 4
         }
     },
     "moisture_requirement": {

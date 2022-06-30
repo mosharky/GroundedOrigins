@@ -31,7 +31,7 @@
     },
     "nerfs": {
         "type": "origins:stacking_status_effect",
-        "min_stacks": -120,
+        "min_stacks": -18000,
         "max_stacks": 300,
         "duration_per_stack": 10,
         "effects": [

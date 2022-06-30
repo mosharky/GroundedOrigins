@@ -25,55 +25,79 @@
             ]
         }
     },
-    "fibrous_string_values": {
-        "type": "origins:modify_food",
+    "string": {
+        "type": "apugli:edible_item",
         "item_condition": {
             "type": "origins:ingredient",
             "ingredient": {
-                "item": "grounded_origins:fibrous_string"
+                "item": "minecraft:string"
             }
         },
-        "food_modifier": {
-            "operation": "addition",
-            "value": 6.0
+        "food_component": {
+            "hunger": 3,
+            "saturation": 0.8,
+            "always_edible": true
         },
-        "saturation_modifier": {
-            "operation": "addition",
-            "value": 0.8
+        "use_action": "eat"
+    },
+    "string_recipe": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "grounded_origins:moth/string_from_wool",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "tag": "minecraft:wool"
+                }
+            ],
+            "result": {
+                "item": "minecraft:string"
+            }
         }
     },
-    "paper_shreds_values": {
-        "type": "origins:modify_food",
+    "leather": {
+        "type": "apugli:edible_item",
         "item_condition": {
             "type": "origins:ingredient",
             "ingredient": {
-                "item": "grounded_origins:paper_shreds"
+                "item": "minecraft:leather"
             }
         },
-        "food_modifier": {
-            "operation": "addition",
-            "value": 4.0
+        "food_component": {
+            "hunger": 6,
+            "saturation": 0.8,
+            "always_edible": true
         },
-        "saturation_modifier": {
-            "operation": "addition",
-            "value": 0.8
-        }
+        "use_action": "eat"
     },
-    "book_bite_values": {
-        "type": "origins:modify_food",
+    "paper": {
+        "type": "apugli:edible_item",
         "item_condition": {
             "type": "origins:ingredient",
             "ingredient": {
-                "item": "grounded_origins:book_bite"
+                "item": "minecraft:paper"
             }
         },
-        "food_modifier": {
-            "operation": "addition",
-            "value": 8.0
+        "food_component": {
+            "hunger": 4,
+            "saturation": 0.8,
+            "always_edible": true
         },
-        "saturation_modifier": {
-            "operation": "addition",
-            "value": 0.8
-        }
+        "use_action": "eat"
+    },
+    "book": {
+        "type": "apugli:edible_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:book"
+            }
+        },
+        "food_component": {
+            "hunger": 8,
+            "saturation": 0.8,
+            "always_edible": true
+        },
+        "use_action": "eat"
     }
 }
