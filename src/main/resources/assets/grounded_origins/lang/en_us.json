@@ -12,7 +12,7 @@
     "origin.grounded_origins.penguin.description": "A group of little furry birds that enjoy the ice, snow, and the murder of fish!",
 
     "power.grounded_origins.beach_crab/home.name": "Home!",
-    "power.grounded_origins.beach_crab/home.description": "Beach biomes provide you with immense strength and fortification. You feel weaker outside of beach biomes if you stay in them for too long.",
+    "power.grounded_origins.beach_crab/home.description": "Beach biomes provide you with immense strength and fortification. You feel weaker outside of beach biomes if you stay in them for over 15 minutes.",
     "power.grounded_origins.beach_crab/rave.name": "Rave!",
     "power.grounded_origins.beach_crab/rave.description": "Play the song of your people, and rave for your valor!",
     "power.grounded_origins.beach_crab/krusty.name": "Krusty",
@@ -20,7 +20,7 @@
     "power.grounded_origins.beach_crab/legs_n_chelipeds.name": "Legs n' Chelipeds",
     "power.grounded_origins.beach_crab/legs_n_chelipeds.description": "Your legs move much faster when in water, and you deal additional damage when wet.",
     "power.grounded_origins.beach_crab/pincers.name": "Pincers",
-    "power.grounded_origins.beach_crab/pincers.description": "Melee weapons are half as effective because you have pincers instead of hands. You deal more damage with your pincers.",
+    "power.grounded_origins.beach_crab/pincers.description": "Melee weapons are half as effective because of your pincers. You deal more damage with your pincers.",
     "power.grounded_origins.beach_crab/shell.name": "Shell",
     "power.grounded_origins.beach_crab/shell.description": "Your have a natural layer of armour.",
     "power.grounded_origins.beach_crab/crustacean_gills.name": "Crustacean Gills",
