@@ -9,10 +9,11 @@
 
 # Dependencies
 ### Fabric:
-- Minecraft v1.18.x
-- [Fabric API v0.46.6+](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-- [Origins (Fabric) v1.3.1+](https://www.curseforge.com/minecraft/mc-mods/origins/files/3561745)
-- [Pehkui (Fabric) v3.1.0+](https://www.curseforge.com/minecraft/mc-mods/pehkui/files/3577068)
+- Minecraft v1.18+, or v1.19+
+- [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
+- [Origins (Fabric)](https://www.curseforge.com/minecraft/mc-mods/origins)
+- [Pehkui (Fabric)](https://www.curseforge.com/minecraft/mc-mods/pehkui)
+- Now includes [Apugli](https://www.curseforge.com/minecraft/mc-mods/apugli) as of v1.2.0!
 
 ### Forge 1.18.x:
 - Minecraft v1.18.x
