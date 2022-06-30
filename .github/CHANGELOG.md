@@ -1,4 +1,14 @@
-[A MORE READABLE CHANGELOG HERE](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.18/.github/CHANGELOG.md)
+[A MORE READABLE CHANGELOG HERE](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.19/.github/CHANGELOG.md)
+# **[1.2.1] - 2022/06/30**
+Wiki & mod page descriptions will be getting changes & additions soon.
+
+### FABRIC:
+Ported to 1.19!
+
+
+***
+
+
 # **[1.2.0] - 2022/06/30**
 If you want any changes, now would be a good time to let me know! Submit a suggestion in the issues section of the github repo. I might create custom status bar textures for each origin too! Also, sorry Forge folks.
 
