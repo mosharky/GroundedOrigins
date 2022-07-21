@@ -1,4 +1,14 @@
 [A MORE READABLE CHANGELOG HERE](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.19/.github/CHANGELOG.md)
+# **[1.2.2] - 2022/07/20**
+
+### FABRIC:
+- Updated Apugli from v1.7.2 to v1.8.2
+  - Fixes Game crash upon being hit by an arrow/fire charge from a dispenser
+
+
+***
+
+
 # **[1.2.1] - 2022/06/30**
 Wiki & mod page descriptions will be getting changes & additions soon.
 
