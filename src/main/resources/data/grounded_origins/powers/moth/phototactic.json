@@ -36,7 +36,7 @@
         "max_stacks": 120,
         "duration_per_stack": 20,
         "effects": {
-            "effect": "minecraft:slow_falling",
+            "effect": "minecraft:glowing",
             "is_ambient": true,
             "show_particles": false,
             "show_icon": false

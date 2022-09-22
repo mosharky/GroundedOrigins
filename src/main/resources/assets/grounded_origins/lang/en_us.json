@@ -28,7 +28,7 @@
     "power.grounded_origins.beach_crab/crawler.name": "Crawler",
     "power.grounded_origins.beach_crab/crawler.description": "You descend down to the water you until stand on and walk on its floor, but move quite fast while walking. You can occasionally muster the strength to swim for a brief period of time.",
     "power.grounded_origins.beach_crab/kelpomaniac.name": "Kelpomaniac",
-    "power.grounded_origins.beach_crab/kelpomaniac.description": "You can eat Kelp, and it empowers your underwater vision.",
+    "power.grounded_origins.beach_crab/kelpomaniac.description": "You can eat Kelp, and it empowers your underwater vision and oxygen capacity.",
 
     "power.grounded_origins.deer/forest_native.name": "Forest Native",
     "power.grounded_origins.deer/forest_native.description": "You were born in the land of bark and leaves. The serenity of your lands provides you with a swift step and a natural regenerative ability.",
@@ -46,7 +46,7 @@
     "power.grounded_origins.moth/insect.name": "Insect",
     "power.grounded_origins.moth/insect.description": "You are 4 times smaller than a regular human. You have 25% less attack/build range. You have 4 hearts, but your body is incredbily light, allowing you take a fall or collision from any height",
     "power.grounded_origins.moth/winged.name": "Winged",
-    "power.grounded_origins.moth/winged.description": "You're capable of flight, but chestplates cover up your wings entirely.",
+    "power.grounded_origins.moth/winged.description": "You're capable of a soft glide, but chestplates cover up your wings entirely.",
     "power.grounded_origins.moth/flutter.name": "Flutter",
     "power.grounded_origins.moth/flutter.description": "Every 25 seconds, you are able to launch yourself 10-20 blocks upwards.",
     "power.grounded_origins.moth/pollinator.name": "Pollinator",
@@ -67,7 +67,7 @@
     "power.grounded_origins.moth/nocturnal.description": "Your vision is adapted to dark spaces, but you feel weaker when exposed to the sun.",
 
     "power.grounded_origins.penguin/aquatic_diet.name": "Aquatic Diet",
-    "power.grounded_origins.penguin/aquatic_diet.description": "You can only eat seafood, and it sustains you much farther.\nYou don't suffer any negative/postive effects from seafood, and you can hold your breathe for a very long time after eating a Pufferfish.",
+    "power.grounded_origins.penguin/aquatic_diet.description": "You can only eat seafood, and it sustains you much farther.\nYou don't suffer any effects from seafood, and consuming a Pufferfish pumps you full of air.",
     "power.grounded_origins.penguin/aquatic_lunge.name": "Aquatic Lunge",
     "power.grounded_origins.penguin/aquatic_lunge.description": "Every 10 seconds, you are able to perform an underwater lunge.",
     "power.grounded_origins.penguin/belly_sledding.name": "Belly Sledding",

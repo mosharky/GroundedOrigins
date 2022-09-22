@@ -13,6 +13,10 @@ group = project.maven_group
 
 repositories {
 	maven {
+		name = "Pug's Maven"
+		url = 'https://maven.merchantpug.net/releases/'
+	}
+	maven {
 		name = "Ladysnake Libs"
 		url = 'https://ladysnake.jfrog.io/artifactory/mods'
 	}
@@ -37,6 +41,13 @@ repositories {
 	maven {
 		url "https://maven.terraformersmc.com/"
 	}
+	maven {
+		name = "Modrinth"
+		url = "https://api.modrinth.com/maven"
+		content {
+			includeGroup "maven.modrinth"
+		}
+	}
 }
 
 dependencies {
@@ -46,11 +57,11 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
-	modImplementation("com.github.virtuoel:pehkui:${pehkui_version}") {
+	modImplementation("com.github.virtuoel:pehkui:${project.pehkui_version}") {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
-	modImplementation "com.github.MerchantPug:apugli:${project.apugli_version}"
-	include "com.github.MerchantPug:apugli:${project.apugli_version}"
+	modImplementation("net.merchantpug:apugli:${project.apugli_version}")
+	include "net.merchantpug:apugli:${project.apugli_version}"
 }
 
 processResources {
@@ -64,7 +75,7 @@ processResources {
 
 tasks.withType(JavaCompile).configureEach {
 	it.options.encoding = "UTF-8"
-	it.options.release = 16
+	options.release = 17
 }
 
 jar {
