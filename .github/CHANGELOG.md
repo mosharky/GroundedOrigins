@@ -1,23 +1,37 @@
 [A MORE READABLE CHANGELOG HERE](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.19/.github/CHANGELOG.md)
-# **[1.2.3] - 2022/09/22**
+# **[1.2.3] - 2022/10/21**
+Forge will hopefully receive an update & port to 1.19.2 once Apugli goes multiloader and the Origins Forge port fixes some dependency issues. If anyone cares, I'm too lazy to update the wiki. It probably needs an overhaul anyway.
 
-### BOTH:
-- Ported to 1.19.2
-- Adjusted several power descriptions:
-  - Moth: Winged
-    - **Before**: _"You're capable of flight, but chestplates cover up your wings entirely."_
-    - **After**: _"You're capable of a soft glide, but chestplates cover up your wings entirely."_
-  - Beach Crab: Kelpomaniac
-    - **Before**: _"You can eat Kelp, and it empowers your underwater vision."_
-    - **After**: _"You can eat Kelp, and it empowers your underwater vision and oxygen capacity."_
-  - Penguin: Aquatic Diet
-    - **Before**: _"You can only eat seafood, and it sustains you much farther. You don't suffer any negative/positive effects from seafood, and you can hold your breathe for a very long time after eating a Pufferfish."_
-    - **After**: _"You can only eat seafood, and it sustains you much farther. You don't suffer any effects from seafood, and consuming a Pufferfish pumps you full of air."_
-- Changed Moth's Phototactic `grounded_origins:moth/glowstone_lights` buff to give the Glowing effect instead of the Slow Falling effect
-  - Slow Falling can be pretty annoying, thus the change. I'm not sure if there's a better, more beneficial effect I could give. If you have one, be my guest to suggest.
+I'll also look at some mod compat with the Ecologics mod maybe for the future.
 
 ### FABRIC:
-- Updated Apugli from v1.8.2 to v1.9.2
+- Ported to 1.19.2 (technically)
+- Updated Apugli from v1.8.2 to v1.9.3
+- Changed Moth powers:
+  - Phototactic:
+    - Buff from Glowstone Lights `grounded_origins:moth/glowstone_lights` to give the Glowing effect instead of the Slow Falling effect
+      - Slow Falling can be pretty annoying, thus the change. I'm not sure if there's a better, more beneficial effect I could give. If you have one, be my guest.
+  - Nocturnal:
+    - Reduced max Weakness duration from 3 mins to 2 mins
+    - Increased minimum time required in the sun for weakness from 10 seconds to 1 minute
+  - Fibrous Diet:
+    - Wool-to-string recipe gives 2 string, up from 1
+- Adjusted several origin/power descriptions:
+  - Moth: Winged
+    - **Before**: *"You're capable of flight, but chestplates cover up your wings entirely."*
+    - **After**: *"You're capable of **a soft glide**, but chestplates cover up your wings entirely."*
+  - Moth: Nocturnal
+    - **Before**: *"Your vision is adapted to dark spaces, but you feel weaker when exposed to the sun."*
+    - **After**: *"Your vision is adapted to dark spaces, but you feel weaker when exposed to the sun **for long periods of time."***
+  - Beach Crab: Kelpomaniac
+    - **Before**: *"You can eat Kelp, and it empowers your underwater vision."*
+    - **After**: *"You can eat Kelp, **which** empowers your **underwater vision and oxygen capacity.**"*
+  - Penguin (Origin):
+    - **Before**: *"A group of little furry birds that enjoy the ice, snow, and the murder of fish!"*
+    - **After**: *"**Furry, sea-faring** birds that enjoy the ice, snow, and the murder of fish!"*
+  - Penguin: Aquatic Diet
+    - **Before**: *"You can only eat seafood, and it sustains you much farther. You don't suffer any negative/positive effects from seafood, and you can hold your breathe for a very long time after eating a Pufferfish."*
+    - **After**: *"You can only eat seafood, and it sustains you much farther. You don't suffer any **effects from seafood, and consuming a Pufferfish pumps you full of air.**"*
 
 
 ***
