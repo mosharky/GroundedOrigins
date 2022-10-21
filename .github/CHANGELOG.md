@@ -1,5 +1,5 @@
 [A MORE READABLE CHANGELOG HERE](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.19/.github/CHANGELOG.md)
-# **[1.2.3] - 2022/21/10**
+# **[1.2.3] - 2022/10/21**
 Forge will hopefully receive an update & port to 1.19.2 once Apugli goes multiloader and the Origins Forge port fixes some dependency issues. If anyone cares, I'm too lazy to update the wiki. It probably needs an overhaul anyway.
 
 I'll also look at some mod compat with the Ecologics mod maybe for the future.
