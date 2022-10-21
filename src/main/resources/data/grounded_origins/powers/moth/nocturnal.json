@@ -11,8 +11,8 @@
     },
     "sunlight_weakness": {
         "type": "origins:stacking_status_effect",
-        "min_stacks": -20,
-        "max_stacks": 361,
+        "min_stacks": -120,
+        "max_stacks": 240,
         "duration_per_stack": 10,
         "effects": {
             "effect": "minecraft:weakness",
