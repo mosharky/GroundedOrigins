@@ -1,16 +1,15 @@
 {
+    "item.grounded_origins.flower_stamens": "Flower Stamens",
+    "item.grounded_origins.book_bite": "Book-Bite",
+    "item.grounded_origins.paper_shreds": "Paper Shreds",
+    "item.grounded_origins.fibrous_string": "Fibrous String",
+    "item.grounded_origins.kelp_mush": "Kelp Mush",
+
+    "key.origins.ternary_active": "Active Power (Ternary)",
+    "key.origins.quaternary_active": "Active Power (Quaternary)",
+
     "origin.grounded_origins.beach_crab.name": "Beach Crab",
     "origin.grounded_origins.beach_crab.description": "Crustaceans who like to rave, preferably on beaches.",
-
-    "origin.grounded_origins.deer.name": "Deer",
-    "origin.grounded_origins.deer.description": "The cloven-hoofed inhabitant of the forests, and the fastest prey of the wilds.",
-
-    "origin.grounded_origins.moth.name": "Moth",
-    "origin.grounded_origins.moth.description": "Small, fuzzy, flying insects with an odd appetite for natural fibers and an infatuation with lamps and lights.",
-
-    "origin.grounded_origins.penguin.name": "Penguin",
-    "origin.grounded_origins.penguin.description": "A group of little furry birds that enjoy the ice, snow, and the murder of fish!",
-
     "power.grounded_origins.beach_crab/home.name": "Home!",
     "power.grounded_origins.beach_crab/home.description": "Beach biomes provide you with immense strength and fortification. You feel weaker outside of beach biomes if you stay in them for over 15 minutes.",
     "power.grounded_origins.beach_crab/rave.name": "Rave!",
@@ -28,8 +27,10 @@
     "power.grounded_origins.beach_crab/crawler.name": "Crawler",
     "power.grounded_origins.beach_crab/crawler.description": "You descend down to the water you until stand on and walk on its floor, but move quite fast while walking. You can occasionally muster the strength to swim for a brief period of time.",
     "power.grounded_origins.beach_crab/kelpomaniac.name": "Kelpomaniac",
-    "power.grounded_origins.beach_crab/kelpomaniac.description": "You can eat Kelp, and it empowers your underwater vision and oxygen capacity.",
+    "power.grounded_origins.beach_crab/kelpomaniac.description": "You can eat Kelp, which empowers your underwater vision and oxygen capacity.",
 
+    "origin.grounded_origins.deer.name": "Deer",
+    "origin.grounded_origins.deer.description": "The cloven-hoofed inhabitant of the forests, and the fastest prey of the wilds.",
     "power.grounded_origins.deer/forest_native.name": "Forest Native",
     "power.grounded_origins.deer/forest_native.description": "You were born in the land of bark and leaves. The serenity of your lands provides you with a swift step and a natural regenerative ability.",
     "power.grounded_origins.deer/berry_good.name": "Berry Good",
@@ -43,6 +44,8 @@
     "power.grounded_origins.deer/hooved_grace.name": "Hooved Grace",
     "power.grounded_origins.deer/hooved_grace.description": "Your hooves absorb half the trauma of any fall.",
 
+    "origin.grounded_origins.moth.name": "Moth",
+    "origin.grounded_origins.moth.description": "Small, fuzzy, flying insects with an odd appetite for natural fibers and an infatuation with lamps and lights.",
     "power.grounded_origins.moth/insect.name": "Insect",
     "power.grounded_origins.moth/insect.description": "You are 4 times smaller than a regular human. You have 25% less attack/build range. You have 4 hearts, but your body is incredbily light, allowing you take a fall or collision from any height",
     "power.grounded_origins.moth/winged.name": "Winged",
@@ -64,8 +67,10 @@
     "power.grounded_origins.moth/phototactic.name": "Phototactic",
     "power.grounded_origins.moth/phototactic.description": "Your infatuation with light has led you to evolve varied effects when around Lanterns, Glowstone, Soul-lights, Sea Lanterns, and Pumpkin-lights for a long period of time, as long as you aren't in sunlight.",
     "power.grounded_origins.moth/nocturnal.name": "Nocturnal",
-    "power.grounded_origins.moth/nocturnal.description": "Your vision is adapted to dark spaces, but you feel weaker when exposed to the sun.",
+    "power.grounded_origins.moth/nocturnal.description": "Your vision is adapted to dark spaces, but you feel weaker when exposed to the sun for long periods of time.",
 
+    "origin.grounded_origins.penguin.name": "Penguin",
+    "origin.grounded_origins.penguin.description": "Furry, sea-faring birds that enjoy the ice, snow, and the murder of fish!",
     "power.grounded_origins.penguin/aquatic_diet.name": "Aquatic Diet",
     "power.grounded_origins.penguin/aquatic_diet.description": "You can only eat seafood, and it sustains you much farther.\nYou don't suffer any effects from seafood, and consuming a Pufferfish pumps you full of air.",
     "power.grounded_origins.penguin/aquatic_lunge.name": "Aquatic Lunge",
@@ -81,14 +86,5 @@
     "power.grounded_origins.penguin/happy_feet.name": "Happy Feet",
     "power.grounded_origins.penguin/happy_feet.description": "You're a 0.25 blocks shorter than a human. Your flightless wings provide more attack speed, but less reach.",
     "power.grounded_origins.penguin/webbed_feet.name": "Webbed Feet",
-    "power.grounded_origins.penguin/webbed_feet.description": "You can swim much faster and take less damage from a fall, but move slower when not in a very cold biome. Alternatively, you can equip Frost Walker boots to maintain the same speed regardless of biome.",
-
-    "item.grounded_origins.flower_stamens": "Flower Stamens",
-    "item.grounded_origins.book_bite": "Book-Bite",
-    "item.grounded_origins.paper_shreds": "Paper Shreds",
-    "item.grounded_origins.fibrous_string": "Fibrous String",
-    "item.grounded_origins.kelp_mush": "Kelp Mush",
-
-    "key.origins.ternary_active": "Active Power (Ternary)",
-    "key.origins.quaternary_active": "Active Power (Quaternary)"
+    "power.grounded_origins.penguin/webbed_feet.description": "You can swim much faster and take less damage from a fall, but move slower when not in a very cold biome. Alternatively, you can equip Frost Walker boots to maintain the same speed regardless of biome."
 }
