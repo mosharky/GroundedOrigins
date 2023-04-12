@@ -1,4 +1,10 @@
 [A MORE READABLE CHANGELOG HERE](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.19/.github/CHANGELOG.md)
+# **[1.2.4] - 2023/04/05**
+- Updated Apugli from v1.9.3 to v1.13.3
+- Updated all dependencies
+- Many power names and descriptions have been adjusted for more clarity 
+
+
 # **[1.2.3] - 2022/10/21**
 Forge will hopefully receive an update & port to 1.19.2 once Apugli goes multiloader and the Origins Forge port fixes some dependency issues. If anyone cares, I'm too lazy to update the wiki. It probably needs an overhaul anyway.
 
