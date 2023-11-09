@@ -6,7 +6,6 @@
     "description": "An Origins addon that adds the Beach Crab, Deer, Moth, and Penguin origins.",
     "authors": [
         "mo_shark/mo_mo",
-        "girlbossremi",
         "EdwinMindcraft"
     ],
     "contact": {
@@ -27,7 +26,7 @@
     },
     "depends": {
         "java": ">=17",
-        "fabricloader": ">=0.14.6",
+        "fabricloader": ">=0.14.22",
         "fabric": ">=0.76.0",
         "minecraft": "1.19.2",
         "origins": ">=1.7.1",
