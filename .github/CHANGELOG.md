@@ -1,8 +1,11 @@
-[A MORE READABLE CHANGELOG HERE](https://github.com/Mos-Origins/GroundedOrigins/blob/fabric/1.19/.github/CHANGELOG.md)
-# **[1.2.4] - 2023/04/05**
-- Updated Apugli from v1.9.3 to v1.13.3
-- Updated all dependencies
-- Many power names and descriptions have been adjusted for more clarity 
+
+# **[1.2.4] - 2023/09/11** (not yet released)
+- Updated Apugli from v1.9.3 to v2.6.6
+- Updated Pehkui from v3.7.2 to v3.7.8
+- Updated Fabric Loader from 0.14.6 to 0.14.22
+- Updated other internal dependencies
+- Penguin's Fish Hunter power now uses `apugli:modify_enchantment_level` to represent oxygen with respiration 3 instead of water breathing effect
+- Fixed Moth's swim speed still being affected when water protection is equipped
 
 
 # **[1.2.3] - 2022/10/21**
