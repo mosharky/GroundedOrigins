@@ -1,0 +1,22 @@
+{
+    "type": "origins:multiple",
+    "oxygen": {
+        "type": "apugli:modify_enchantment_level",
+        "enchantment": "minecraft:respiration",
+        "modifiers": {
+            "operation": "addition",
+            "value": 3
+        }
+    },
+    "additional_damage": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "addition",
+            "value": 6
+        },
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    }
+}

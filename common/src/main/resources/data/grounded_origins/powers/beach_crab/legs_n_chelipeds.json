@@ -1,0 +1,39 @@
+{
+    "type": "origins:multiple",
+    "speed": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "addition",
+            "value": 0.04
+        },
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0.0
+        }
+    },
+    "strength": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "operation": "addition",
+            "value": 2,
+            "attribute": "minecraft:generic.attack_damage"
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">",
+                    "compare_to": 0.0
+                },
+                {
+                    "type": "origins:in_rain"
+                }
+            ]
+        }
+    }
+}

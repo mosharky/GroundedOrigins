@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:spore_blossom"
+        }
+    ],
+    "result": {
+        "item": "grounded_origins:flower_stamens",
+        "count": 4
+    }
+}

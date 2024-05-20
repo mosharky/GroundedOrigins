@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "enabled": true,
+    "origins": [
+        "grounded_origins:beach_crab",
+        "grounded_origins:deer",
+        "grounded_origins:moth",
+        "grounded_origins:penguin"
+    ]
+}
