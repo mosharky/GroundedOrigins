@@ -1,6 +1,6 @@
 package com.momo.grounded_origins.platform;
 
-import com.momo.grounded_origins.Constants;
+import com.momo.grounded_origins.GroundedOrigins;
 import com.momo.grounded_origins.platform.services.IPlatformHelper;
 
 import java.util.ServiceLoader;
@@ -24,7 +24,7 @@ public class Services {
         final T loadedService = ServiceLoader.load(clazz)
                 .findFirst()
                 .orElseThrow(() -> new NullPointerException("Failed to load service for " + clazz.getName()));
-        Constants.LOG.debug("Loaded {} for service {}", loadedService, clazz);
+        GroundedOrigins.LOG.debug("Loaded {} for service {}", loadedService, clazz);
         return loadedService;
     }
 }

@@ -1,6 +1,6 @@
 package com.momo.grounded_origins.mixin;
 
-import com.momo.grounded_origins.Constants;
+import com.momo.grounded_origins.GroundedOrigins;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
@@ -13,8 +13,8 @@ public class MixinTitleScreen {
     
     @Inject(at = @At("HEAD"), method = "init()V")
     private void init(CallbackInfo info) {
-        
-        Constants.LOG.info("This line is printed by an example mod mixin from Fabric!");
-        Constants.LOG.info("MC Version: {}", Minecraft.getInstance().getVersionType());
+
+        GroundedOrigins.LOG.info("This line is printed by an example mod mixin from Fabric!");
+        GroundedOrigins.LOG.info("MC Version: {}", Minecraft.getInstance().getVersionType());
     }
 }

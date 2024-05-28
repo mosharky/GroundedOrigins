@@ -8,6 +8,9 @@
 - Fixed Moth's swim speed still being affected when water protection is equipped
 
 
+***
+
+
 # **[1.2.3] - 2022/10/21**
 Forge will hopefully receive an update & port to 1.19.2 once Apugli goes multiloader and the Origins Forge port fixes some dependency issues. If anyone cares, I'm too lazy to update the wiki. It probably needs an overhaul anyway.
 
